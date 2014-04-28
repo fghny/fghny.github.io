@@ -1,3 +1,7 @@
 global:
   english: English
   korean: Hangook-uh
+menu:
+  home: Home
+  about: About Us
+  contact: Contact Us
