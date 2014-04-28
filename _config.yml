@@ -1,3 +1,7 @@
 name: Flushing Gospel Hall
+safe: false
+permalink: pretty
+plugins: _plugin
 markdown: redcarpet
 pygments: true
+languages: ["en", "kr"]
