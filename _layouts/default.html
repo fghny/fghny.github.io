@@ -18,11 +18,17 @@
       <!-- Header -->
       <div class="header">
         <!-- Title -->     
-        <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-        <a class="extra" href="/">Home</a>
-        <a class="extra" href="/about">About Us</a>
-        <a class="extra" href="/contact">Contact Us</a>
-
+        {% if site.lang == 'en' %}
+          <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+          <a class="extra" href="/">Home</a>
+          <a class="extra" href="/about">About Us</a>
+          <a class="extra" href="/contact">Contact Us</a>
+        {% else if site.lang == "kr" %}
+          <h1 class="title"><a href="/kr">{{ site.name }}</a></h1>
+          <a class="extra" href="/kr">Home</a>
+          <a class="extra" href="/kr/about">About Us</a>
+          <a class="extra" href="/kr/contact">Contact Us</a>
+        {% endif %}
         
         {% if site.lang == 'en' %}
           {% capture link1 %}{{ site.baseurl_url }}/kr{{ page.url }}{% endcapture %}
