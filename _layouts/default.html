@@ -24,7 +24,7 @@
         <a class="extra" href="/contact">Contact Us</a>
 
         
-        {% if site.lang != 'kr' %}
+        {% if site.lang == 'en' %}
           {% capture link1 %}{{ site.baseurl_root }}/kr{{ page.url }}{% endcapture %}
           <a href="{{ link1 }}" >{% t global.korean %}</a>
         {% else if site.lang == "kr" %}
