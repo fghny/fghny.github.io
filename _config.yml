@@ -1,5 +1,6 @@
 name: Flushing Gospel Hall
 safe: false
+baseurl: /fghny
 permalink: pretty
 plugins: _plugin
 markdown: redcarpet
