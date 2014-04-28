@@ -25,10 +25,10 @@
 
         
         {% if site.lang == 'en' %}
-          {% capture link1 %}{{ site.baseurl_root }}/kr{{ page.url }}{% endcapture %}
+          {% capture link1 %}{{ site.baseurl }}/kr{{ page.url }}{% endcapture %}
           <a href="{{ link1 }}" >{% t global.korean %}</a>
         {% else if site.lang == "kr" %}
-          {% capture link2 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+          {% capture link2 %}{{ site.baseurl }}{{ page.url }}{% endcapture %}
           <a href="{{ link2 }}" >{% t global.english %}</a>
         {% endif %}
       </div>
