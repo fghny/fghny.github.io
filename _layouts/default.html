@@ -11,6 +11,10 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
+   
+    <!-- Foundation 5 CSS -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/foundation.css">
   </head>
     
   <body>
@@ -18,25 +22,29 @@
       <!-- Header -->
       <div class="header">
         <!-- Title -->     
-        {% if site.lang == 'en' %}
-          <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-          <a class="extra" href="/">{% t menu.home %}</a>
-          <a class="extra" href="/about">{% t menu.about %}</a>
-          <a class="extra" href="/contact">{% t menu.contact %}</a>
-        {% else if site.lang == "kr" %}
-          <h1 class="title"><a href="/kr">{{ site.name }}</a></h1>
-          <a class="extra" href="/kr">{% t menu.home %}</a>
-          <a class="extra" href="/kr/about">{% t menu.about %}</a>
-          <a class="extra" href="/kr/contact">{% t menu.contact %}</a>
-        {% endif %}
+        <h1 class="title"><a href="/">{{ site.name }}</a></h1>
         
-        {% if site.lang == 'en' %}
-          {% capture link1 %}{{ site.baseurl_url }}/kr{{ page.url }}{% endcapture %}
-          <a href="{{ link1 }}" >{% t global.korean %}</a>
-        {% else if site.lang == "kr" %}
-          {% capture link2 %}{{ site.baseurl_url }}{{ page.url }}{% endcapture %}
-          <a href="{{ link2 }}" >{% t global.english %}</a>
-        {% endif %}
+        <div class="menu">
+          <!-- Menu buttons -->
+          {% if site.lang == 'en' %}
+            <a class="extra" href="/">{% t menu.home %}</a>
+            <a class="extra" href="/about">{% t menu.about %}</a>
+            <a class="extra" href="/contact">{% t menu.contact %}</a>
+          {% else if site.lang == "kr" %}
+            <a class="extra" href="/kr">{% t menu.home %}</a>
+            <a class="extra" href="/kr/about">{% t menu.about %}</a>
+            <a class="extra" href="/kr/contact">{% t menu.contact %}</a>
+          {% endif %}
+         
+          <!-- Language switch -->
+          {% if site.lang == 'en' %}
+            {% capture link1 %}{{ site.baseurl_url }}/kr{{ page.url }}{% endcapture %}
+            <a href="{{ link1 }}" >{% t global.korean %}</a>
+          {% else if site.lang == "kr" %}
+            {% capture link2 %}{{ site.baseurl_url }}{{ page.url }}{% endcapture %}
+            <a href="{{ link2 }}" >{% t global.english %}</a>
+          {% endif %}
+        </div>
       </div>
     
       <!-- Body -->
