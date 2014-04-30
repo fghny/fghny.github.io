@@ -102,6 +102,21 @@
     <script src="{{ baseurl }}/js/foundation/foundation.js"></script>
     <script src="{{ baseurl }}/js/foundation/foundation.topbar.js"></script>
     <script>
+      <!-- Sticky Footer -->
+      $(window).bind("load", function () {
+        var footer = $("footer");
+        var pos = footer.position();
+        var height = $(window).height();
+        height = height - pos.top;
+        height = height - footer.height();
+        if (height > 0) {
+          footer.css({
+            'margin-top': height + 'px'
+          });
+        }
+      });
+    </script>
+    <script>
       $(document).foundation({
         //sticky_class : 'sticky',
         //custom_back_text : true,
