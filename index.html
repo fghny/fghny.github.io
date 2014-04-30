@@ -5,13 +5,11 @@ title: titles.home
 <div class="row">
   <div class="main-title">
     {% if site.lang == 'en' %}
-      <div class="en">
-        <h1>{% t titles.home %}</h1>
-      </div>
+      <h1 class="en">{% t titles.home %}</h1>
+      <h5 class="en">{% t home.title %}</h5>
     {% else if site.lang == 'kr' %}
-      <div class="kr">
-        <h1>{% t titles.home %}</h1>
-      </div>
+      <h1 class="kr">{% t titles.home %}</h1>
+      <h5 class="kr">{% t home.title %}</h5>
     {% endif %}
   </div>
   <hr />
@@ -20,5 +18,30 @@ title: titles.home
 <div class="row">
   <div class="large-12 columns">
     <img src="http://placehold.it/1000x400&text=[ IMG 1 ]"/>
+  </div>
+</div>
+
+
+<div class="row">
+  <hr />
+  <div class="large-4 columns">
+    <div class="front-page">
+      <h2>{% t home.welcome %}</h2>
+      {% tf welcome.md %}
+    </div>
+  </div>
+ 
+  <div class="large-4 columns">
+    <div class="front-page">
+      <h2>{% t home.schedule %}</h2>
+      {% tf schedule.md %}
+    </div>
+  </div>
+  
+  <div class="large-4 columns">
+    <div class="front-page">
+      <h2>{% t home.location %}</h2>
+      {% tf location.md %}
+    </div>
   </div>
 </div>
