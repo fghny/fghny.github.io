@@ -1,8 +1,10 @@
 /* Importing Google Fonts */
 @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
+
 /* Body */
 body {
+  height: 100%;
   background-color: #F7F7ED !important;
 }
 
@@ -75,8 +77,6 @@ nav.top-bar {
 
 /* Footer */
 footer {
-  position: fixed;
-  bottom: 0;
   min-width: 100%;
   height: 100px;
   background: #00364A;

@@ -14,10 +14,6 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/foundation.css">
 
-    <!-- Javascript -->
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation/foundation.js"></script>
-    <script src="js/foundation/foundation.topbar.js"></script>
   </head>
     
   <body>
@@ -100,13 +96,17 @@
     </footer>
     <!-- END Footer -->
 
+    <!-- Javascript -->
+    <script src="{{ baseurl }}/js/vendor/jquery.js"></script>
+    <script src="{{ baseurl }}/js/foundation/foundation.js"></script>
+    <script src="{{ baseurl }}/js/foundation/foundation.topbar.js"></script>
     <script>
       $(document).foundation({
-        sticky_class : 'sticky',
-        custom_back_text : true,
-        back_text : 'Black',
+        //sticky_class : 'sticky',
+        //custom_back_text : true,
+        //back_text : 'Black',
         is_hover : true,
-        mobile_show_parent_link : false,
+        //mobile_show_parent_link : false,
         scrolltop : true
       });
     </script>
