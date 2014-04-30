@@ -1,11 +1,13 @@
 titles:
-  home: Flushing Gospel Hall (KR)
+  home: 플러싱 가스펠 홀
   about: About Us (KR)
   contact: Contact Us (KR)
 global:
   english: English
   korean: 한국어
 menu:
-  home: Home (KR)
-  about: About Us (KR)
-  contact: Contact Us (KR)
+  home: 홈
+  about: 모임 소개
+  contact: 연락
+home:
+  title: 주 예수 그리스도의  이름으로 뉴욕의 풀러싱에 모이는 성도들

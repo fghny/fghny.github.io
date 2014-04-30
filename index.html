@@ -1,14 +1,24 @@
 ---
 layout: default
 title: titles.home
-
 ---
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-  {% tf index.md %}
+<div class="row">
+  <div class="main-title">
+    {% if site.lang == 'en' %}
+      <div class="en">
+        <h1>{% t titles.home %}</h1>
+      </div>
+    {% else if site.lang == 'kr' %}
+      <div class="kr">
+        <h1>{% t titles.home %}</h1>
+      </div>
+    {% endif %}
+  </div>
+  <hr />
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <img src="http://placehold.it/1000x400&text=[ IMG 1 ]"/>
+  </div>
 </div>
