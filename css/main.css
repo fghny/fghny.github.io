@@ -1,3 +1,11 @@
+/* Importing Google Fonts */
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+/* Body */
+body {
+  background-color: #F7F7ED !important;
+}
+
 /* Navigation Bar */
 nav.top-bar {
   text-align: center;
@@ -15,7 +23,7 @@ nav.top-bar {
 }
 
 .title-area a.kr h1 {
-  font-family: "나눔명조", sans-serif;
+  font-family: "Nanum Myeongjo", "나눔명조", sans-serif;
 }
 
 .top-bar-section ul li.has-form a{
@@ -27,16 +35,56 @@ nav.top-bar {
 }
 
 /* Index Page */
-.main-title h1 {
+.main-title h1, h5 {
   font-style: bold;
   text-align: center;
 
 }
 
-.main-title .en h1 {
+.main-title h1.en {
   font-family: Garamond;
+  color: #2D9FC4;
 }
 
-.main-title .kr h1 {
-  font-family: "나눔명조", sans-serif;
+.main-title h5.en {
+  font-family: Garamond;
+  color: #6F7072;
+}
+
+
+.main-title h1.kr {
+  font-family: "Nanum Myeongjo", "나눔명조", sans-serif;
+  color: #2D9FC4;
+}
+
+.main-title h5.kr {
+  font-family: "Nanum Myeongjo", "나눔명조", sans-serif;
+  color: #6F7072;
+}
+
+.front-page h2 {
+  font-family: Garamond;
+  color: #00364A;
+}
+
+.front-page p {
+  font-family: Garamond;
+  color: #6F7072;
+
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+  height: 100px;
+  background: #00364A;
+}
+
+footer .copyright {
+  padding: 1em 0 0 0;
+  font-family: Garamond;
+  font-size: 0.8em;
+  color: #FFFFFF;
 }
