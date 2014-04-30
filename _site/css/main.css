@@ -21,11 +21,11 @@ nav.top-bar {
 }
 
 .title-area a.en h1 {
-  font-family: Garamond;
+  font-family: Garamond, serif;
 }
 
 .title-area a.kr h1 {
-  font-family: "Nanum Myeongjo", "나눔명조", sans-serif;
+  font-family: "Nanum Myeongjo", "나눔명조", serif;
 }
 
 .top-bar-section ul li.has-form a{
@@ -44,33 +44,33 @@ nav.top-bar {
 }
 
 .main-title h1.en {
-  font-family: Garamond;
+  font-family: Garamond, serif;
   color: #2D9FC4;
 }
 
 .main-title h5.en {
-  font-family: Garamond;
+  font-family: Garamond, serif;
   color: #6F7072;
 }
 
 
 .main-title h1.kr {
-  font-family: "Nanum Myeongjo", "나눔명조", sans-serif;
+  font-family: "Nanum Myeongjo", "나눔명조", serif;
   color: #2D9FC4;
 }
 
 .main-title h5.kr {
-  font-family: "Nanum Myeongjo", "나눔명조", sans-serif;
+  font-family: "Nanum Myeongjo", "나눔명조", serif;
   color: #6F7072;
 }
 
 .front-page h2 {
-  font-family: Garamond;
+  font-family: Garamond, serif;
   color: #00364A;
 }
 
 .front-page p {
-  font-family: Garamond;
+  font-family: Garamond, serif;
   color: #6F7072;
 
 }
