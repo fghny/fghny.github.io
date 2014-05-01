@@ -43,11 +43,17 @@
               <a href="/about">{% t menu.about %}</a>
             </li>
             <li class="has-form">
+              <a href="/location">{% t menu.location %}</a>
+            </li>
+            <li class="has-form">
               <a href="/contact">{% t menu.contact %}</a>
             </li>
             {% else if site.lang == "kr" %}
             <li class="has-form">
               <a href="/kr/about">{% t menu.about %}</a>
+            </li>
+            <li class="has-form">
+              <a href="/kr/location">{% t menu.location %}</a>
             </li>
             <li class="has-form">
               <a href="/kr/contact">{% t menu.contact %}</a>
@@ -119,12 +125,12 @@
     <!-- Foundation JS -->
     <script>
       $(document).foundation({
-        sticky_class : 'sticky',
-        custom_back_text : true,
-        back_text : 'Black',
-        is_hover : true,
-        mobile_show_parent_link : false,
-        scrolltop : true
+        //sticky_class : 'sticky',
+        //custom_back_text : true,
+        //back_text : 'Black',
+        //is_hover : true,
+        //mobile_show_parent_link : false,
+        //scrolltop : true
       });
     </script>
   </body>

@@ -1,1 +1,4 @@
-We are located at: (KR)
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:300px;width:300px;"><div id="gmap_canvas" style="height:300px;width:300px;"></div><a class="google-map-code" href="http://www.map-embed.com" id="get-map-data">try this</a><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(40.756169,-73.80484000000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.756169, -73.80484000000001)});infowindow = new google.maps.InfoWindow({content:"<b>Flushing Gospel Hall</b><br/>4504 162nd Street<br/>11358 New York" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+<a href="/kr/location" class="link">Learn more about how to get here (KR)>></a>
+
