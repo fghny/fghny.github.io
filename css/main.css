@@ -79,6 +79,11 @@ a.link {
   font-size: 0.8em;
 }
 
+/* Google Maps */
+iframe, object, embed {
+  max-width: 100%
+}
+
 /* Footer */
 footer {
   min-width: 100%;
