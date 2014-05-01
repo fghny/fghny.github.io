@@ -75,6 +75,10 @@ nav.top-bar {
 
 }
 
+a.link {
+  font-size: 0.8em;
+}
+
 /* Footer */
 footer {
   min-width: 100%;
