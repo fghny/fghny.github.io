@@ -1,6 +1,6 @@
 name: Flushing Gospel Hall
 safe: false
-baseurl: fghny.github.io
+baseurl: flushinggospelhall.org
 permalink: pretty
 plugins: _plugin
 markdown: redcarpet
