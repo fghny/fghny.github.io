@@ -9,7 +9,7 @@ body {
 }
 
 /* Navigation Bar */
-nav.top-bar {
+.top-bar {
   text-align: center;
 }
 
@@ -26,14 +26,6 @@ nav.top-bar {
 
 .title-area a.kr h1 {
   font-family: "Nanum Myeongjo", "나눔명조", serif;
-}
-
-.top-bar-section ul li.has-form a{
-}
-
-.top-bar-section ul.right li.has-form a {
-  font-family: "돋움", dotum, sans-serif;
-  font-style: bold;
 }
 
 /* Index Page */
