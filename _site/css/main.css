@@ -5,29 +5,14 @@
 /* Body */
 body {
   height: 100%;
-  background-color: #F7F7ED !important;
+  /* background-color: #F7F7ED !important; */
 }
 
 /* Navigation Bar */
-.top-bar {
+/*.top-bar {
   text-align: center;
 }
-
-.title-area h1{
-  text-align: left;
-  padding: 0 0 0 1em;
-  color: #FFFFFF;
-  font-style: bold;
-}
-
-.title-area a.en h1 {
-  font-family: Garamond, serif;
-}
-
-.title-area a.kr h1 {
-  font-family: "Nanum Myeongjo", "나눔명조", serif;
-}
-
+*/
 /* Index Page */
 .main-title h1, h5 {
   font-style: bold;
@@ -67,9 +52,11 @@ body {
 
 }
 
+/*
 a.link {
   font-size: 0.8em;
 }
+*/
 
 /* Google Maps */
 iframe, object, embed {
