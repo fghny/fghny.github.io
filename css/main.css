@@ -1,78 +1,21 @@
-/* Importing Google Fonts */
-@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
-
-/* Body */
-body {
-  height: 100%;
-  /* background-color: #F7F7ED !important; */
-}
-
-/* Navigation Bar */
-/*.top-bar {
-  text-align: center;
-}
-*/
-/* Index Page */
-.main-title h1, h5 {
-  font-style: bold;
-  text-align: center;
-
-}
-
-.main-title h1.en {
-  font-family: Garamond, serif;
-  color: #2D9FC4;
-}
-
-.main-title h5.en {
-  font-family: Garamond, serif;
-  color: #6F7072;
-}
-
-
-.main-title h1.kr {
-  font-family: "Nanum Myeongjo", "나눔명조", serif;
-  color: #2D9FC4;
-}
-
-.main-title h5.kr {
-  font-family: "Nanum Myeongjo", "나눔명조", serif;
-  color: #6F7072;
-}
-
-.front-page h2 {
-  font-family: Garamond, serif;
-  color: #00364A;
-}
-
-.front-page p {
-  font-family: Garamond, serif;
-  color: #6F7072;
-
-}
-
-/*
-a.link {
-  font-size: 0.8em;
-}
-*/
 
 /* Google Maps */
-iframe, object, embed {
-  max-width: 100%;
-}
 
 /* Footer */
+/*
 footer {
   min-width: 100%;
   height: 100px;
   background: #00364A;
 }
+*/
 
+/*
 footer .copyright {
   padding: 1em 0 0 0;
   font-family: Garamond;
   font-size: 0.8em;
   color: #FFFFFF;
 }
+*/
