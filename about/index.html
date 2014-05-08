@@ -93,20 +93,7 @@
     <script src="/js/foundation/foundation.topbar.js"></script>
     <script src="js/app.js"></script>
     <!-- Sticky Footer -->
-    <script>
-      $(window).bind("load", function () {
-        var footer = $("footer");
-        var pos = footer.position();
-        var height = $(window).height();
-        height = height - pos.top;
-        height = height - footer.height();
-        if (height > 0) {
-          footer.css({
-            'margin-top': height + 'px'
-          });
-        }
-      });
-    </script>
+    <script src="/js/footer.js"></script>
     
     <!-- Foundation JS -->
     <script>
