@@ -3,20 +3,18 @@ layout: default
 title: titles.home
 ---
 <div class="row">
-  <div class="main-title">
-    {% if site.lang == 'en' %}
-      <h1 class="en">{% t titles.home %}</h1>
-      <h5 class="en">{% t home.title %}</h5>
-    {% else if site.lang == 'kr' %}
-      <h1 class="kr">{% t titles.home %}</h1>
-      <h5 class="kr">{% t home.title %}</h5>
-    {% endif %}
-  </div>
+    <div class="main-title">
+      <h1 class={{ site.lang }}>{% t titles.home %}</h1>
+    </div>
+    <div class="sub-title">
+      <h5 class={{ site.lang }}>{% t home.title %}</h5>
+    </div>
   <hr />
 </div>
 
 <div class="row">
   <div class="large-12 columns">
+    <!-- Front Page Image -->
     <img src="http://placehold.it/1000x400&text=[ IMG 1 ]"/>
   </div>
 </div>
@@ -27,32 +25,28 @@ title: titles.home
   <hr />
 
   <div class="large-4 columns">
-    <div class="front-page">
+    <div class="front-page {{ site.lang }}">
       <h2>{% t home.welcome %}</h2>
       {% tf welcome.md %}
-
-      <hr />
       </br>
     </div>
   </div>
  
   <div class="large-4 columns">
-    <div class="front-page">
+    <div class="front-page {{ site.lang }}">
       <h2>{% t home.schedule %}</h2>
       {% tf schedule.md %}
-      
-      <hr />
+      {% tf schedule_link.md %}
       </br>
     </div>
   </div>
   
   <div class="large-4 columns">
-    <div class="front-page">
+    <div class="front-page {{ site.lang }}">
       <h2>{% t home.location %}</h2>
-      <iframe width="300" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Flushing%20Gospel%20Hall%2C%20Queens%2C%20NY%2C%20United%20States&key=AIzaSyAg8ONIWFzpAwqfqUjvicJSuLi-eGTSmC8"></iframe>
       {% tf location.md %}
-      
-      <hr />
+      {% tf location_link.md %}
+
       </br>
     </div>
   </div>

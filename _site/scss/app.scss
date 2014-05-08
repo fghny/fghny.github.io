@@ -2,27 +2,137 @@
 // @import "settings";
 @import "foundation";
 
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+//================ Variables ================
+// Colors
+$white: #FFFFFF;
+$lt-blue: #2D9FC4;
+$dk-blue: #00364A;
+$lt-gray: #6F7072;
+
+// English Font Family
+$en-fonts: Garamond, serif;
+
+// Korean Font Family
+$kr-fonts: "Nanum Myeongjo", "나눔명조", serif;
+ 
+//================== Styles =================
+/* HTML */
+html {
+}
+
+/* Body */
+body {
+  height: 100%;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background: $dk-blue;
+  padding: 1em 0 0 0;
+  color: $white;
+  font-size: 0.8em;
+
+  .copyright.en {
+    font-family: $en-fonts;
+  }
+  .copyright.kr {
+    font-family: $kr-fonts;
+  }
+}
+
+/* Navbar */
+.top-bar {
+  text-align: center;
+}
+
+/* Navbar Title Area */
 .title-area {
   h1 {
     text-align: left;
     padding: 0 0 0 1rem;
-    color: #FFFFFF;
+    color: $white;
     font-style: bold;
   }
 
   a.en {
     h1 {
-      font-family: Garamond, serif;
+      font-family: $en-fonts;
     }
   }
 
   a.kr {
     h1 {
-      font-family: "Nanum Myeongjo", "나눔명조", serif;
+      font-family: $kr-fonts
     }
   }
 }
 
-.top-bar {
-  text-align: center;
+/* Main Page */
+.main-title {
+  h1 {
+    font-style: bold;
+    text-align: center;
+    color: $lt-blue;
+  }
+  .en {
+    font-family: $en-fonts;
+  }
+  .kr {
+    font-family: $kr-fonts;
+  }
+}
+
+.sub-title {
+  h5 {
+    font-style: bold;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 0 2em 0 2em;
+    color: $lt-gray;
+  }
+  .en {
+    font-family: $en-fonts;
+  }
+  .kr {
+    font-family: $kr-fonts;
+  }
+}
+
+.front-page {
+  & a {
+    display: block;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  &.en {
+    & h2 {
+      color: $dk-blue;
+      text-align: center;
+      font-family: $en-fonts;
+    }
+    & p {
+      color: $lt-gray;
+      font-family: $en-fonts;
+    }
+  }
+  &.kr {
+    & h2 {
+      color: $dk-blue;
+      text-align: center;
+      font-family: $kr-fonts;
+    }
+    & p {
+      color: $lt-gray;
+      font-family: $kr-fonts;
+    }
+  }
+}
+
+/* iframe */
+iframe, object, embed {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
