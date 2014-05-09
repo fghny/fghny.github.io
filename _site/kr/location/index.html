@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Location (KR)</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Custom CSS -->
     <script src="bower_components/modernizr/modernizr.js"></script>  
-    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/app.css">
   </head>
     
@@ -61,11 +60,16 @@
     <!-- Body -->
     <div class="row">
   <div class="large-12 columns">
-    <h1>Location (KR)</h1>
+    <div class="front-page kr">
+      </br>
+      <iframe width="800" height="600" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Flushing%20Gospel%20Hall%2C%20Queens%2C%20NY%2C%20United%20States&key=AIzaSyAg8ONIWFzpAwqfqUjvicJSuLi-eGTSmC8"></iframe>
+       
+      </br>
+      <div class="instructions">
+        <p>Directions to Flushing Gospel Hall by car or mass transit can found using the map above. (KR)</p>
 
-    <iframe width="800" height="600" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Flushing%20Gospel%20Hall%2C%20Queens%2C%20NY%2C%20United%20States&key=AIzaSyAg8ONIWFzpAwqfqUjvicJSuLi-eGTSmC8"></iframe>
-    <h1>Directions (KR)</h1>
-
+      </div>
+    </div>
   </div>
 </div>
 
@@ -93,8 +97,10 @@
 
     <!-- Javascript -->
     <script src="/js/vendor/jquery.js"></script>
-    <script src="/js/foundation/foundation.js"></script>
-    <script src="/js/foundation/foundation.topbar.js"></script>
+    <script src="/js/vendor/fastclick.js"></script>
+    <script src="/js/foundation/foundation.min.js"></script> 
+    <!-- <script src="/js/foundation/foundation.js"></script> -->
+    <!-- <script src="/js/foundation/foundation.topbar.js"></script> -->
     <script src="js/app.js"></script>
     <!-- Sticky Footer -->
     <script src="/js/footer.js"></script>
@@ -102,12 +108,6 @@
     <!-- Foundation JS -->
     <script>
       $(document).foundation({
-        //sticky_class : 'sticky',
-        //custom_back_text : true,
-        //back_text : 'Black',
-        //is_hover : true,
-        //mobile_show_parent_link : false,
-        //scrolltop : true
       });
     </script>
   </body>

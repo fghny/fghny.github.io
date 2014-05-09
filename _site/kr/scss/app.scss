@@ -6,6 +6,7 @@
 //================ Variables ================
 // Colors
 $white: #FFFFFF;
+$black: #000000;
 $lt-blue: #2D9FC4;
 $dk-blue: #00364A;
 $lt-gray: #6F7072;
@@ -14,7 +15,7 @@ $lt-gray: #6F7072;
 $en-fonts: Garamond, serif;
 
 // Korean Font Family
-$kr-fonts: "Nanum Myeongjo", "나눔명조", serif;
+$kr-fonts: "Nanum Myeongjo", serif;
  
 //================== Styles =================
 /* HTML */
@@ -114,9 +115,22 @@ footer {
       text-align: center;
       font-family: $en-fonts;
     }
+    & h3 {
+      color: $dk-blue;
+      text-align: center;
+      font-family: $en-fonts;
+    }
+    & h4 {
+      color: $black;
+      //text-align: center;
+      font-family: $en-fonts;
+    }
     & p {
       color: $lt-gray;
       font-family: $en-fonts;
+    }
+    & .instructions {
+      text-align: center;
     }
   }
   &.kr {
@@ -125,9 +139,22 @@ footer {
       text-align: center;
       font-family: $kr-fonts;
     }
+    & h3 {
+      color: $dk-blue;
+      text-align: center;
+      font-family: $kr-fonts;
+    }
+    & h4 {
+      color: $black;
+      //text-align: center;
+      font-family: $kr-fonts;
+    }
     & p {
       color: $lt-gray;
       font-family: $kr-fonts;
+    }
+    & .instructions {
+      text-align: center;
     }
   }
 }

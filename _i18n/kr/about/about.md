@@ -1,1 +1,2 @@
-Ooo ri nun
+## What We Believe (KR)
+
