@@ -3,7 +3,7 @@ $(window).bind("load", function() {
   var pos = footer.position();
   var height = $(window).height();
   height = height - pos.top;
-  height = height - footer.height();
+  height = height - footer.outerHeight();
   if(height > 0) {
     footer.css({
       "margin-top": height + "px"

@@ -27,18 +27,20 @@ body {
 }
 
 footer {
-  height: 100px;
   width: 100%;
-  background: $dk-blue;
-  padding: 1em 0 0 0;
-  color: $white;
-  font-size: 0.8em;
+  //background: $dk-blue;
+  padding: 0.5rem 0 0 0;
+  color: $lt-gray;
+  font-size: 0.7rem;
+  text-align: center;
 
   .copyright.en {
     font-family: $en-fonts;
+    height: 3rem;
   }
   .copyright.kr {
     font-family: $kr-fonts;
+    height: 3rem;
   }
 }
 
@@ -103,7 +105,7 @@ footer {
 .front-page {
   & a {
     display: block;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     text-align: center;
   }
   &.en {
