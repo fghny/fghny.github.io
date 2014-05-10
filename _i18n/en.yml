@@ -4,6 +4,7 @@ titles:
   services: Services
   location: Location
   contact: Contact Us
+  404: Page Not Found
 global:
   english: English
   korean: 한국어

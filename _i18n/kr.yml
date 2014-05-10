@@ -4,6 +4,7 @@ titles:
   services: 플러싱 모임을 방문할 때
   location: Location (KR)
   contact: Contact Us (KR)
+  404: Page Not Found (KR)
 global:
   english: English
   korean: 한국어
