@@ -5,6 +5,16 @@ title: titles.about
 <div class="row">
   <div class="large-12 columns">
     <div class="front-page {{ site.lang }}">
+      {% tf about/title.md %}
+      <div class="verse">
+        <div class="quote">
+          {% tf about/verse.md %}
+        </div>
+        </br>
+        <div class="reference">
+          {% tf about/verse_reference.md %}
+        </div>
+      </div>
       {% tf about/about.md %}
     </div>
   </div>

@@ -24,15 +24,33 @@ title: titles.home
   <!-- Divider -->
   <hr />
 
-  <div class="large-4 columns">
+  <div class="large-12 columns">
     <div class="front-page {{ site.lang }}">
       <h2>{% t home.welcome %}</h2>
       {% tf welcome.md %}
+      {% if site.lang == "en" %}
+        <div class="verse">
+          <div class="quote">
+            {% tf welcome_verse.md %}
+          </div>
+          </br>
+          <div class="reference">
+            {% tf welcome_verse_reference.md %}
+          </div>
+        </div>
+        </br>
+      {% endif %}
+      {% tf welcome_instructions.md %}
       </br>
     </div>
   </div>
- 
-  <div class="large-4 columns">
+</div>
+
+<div class="row">
+  <!-- Divider -->
+  <hr />
+
+  <div class="large-8 columns">
     <div class="front-page {{ site.lang }}">
       <h2>{% t home.schedule %}</h2>
       {% tf schedule.md %}

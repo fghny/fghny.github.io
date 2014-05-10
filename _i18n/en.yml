@@ -1,6 +1,7 @@
 titles:
   home: Flushing Gospel Hall
   about: About Us
+  services: Services
   location: Location
   contact: Contact Us
 global:
@@ -9,10 +10,11 @@ global:
 menu:
   home: Home
   about: About Us
+  services: Services
   location: Location
   contact: Contact Us
 home:
   title: Christians gathered together unto the name of the Lord Jesus Christ at Flushing, New York
   welcome: Welcome
-  schedule: Schedule
+  schedule: Schedule of Regular Meetings
   location: Location
