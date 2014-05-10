@@ -144,7 +144,7 @@ table {
     & .verse {
       display: block;
       margin: 0 auto;
-      padding: 1rem 8rem 1rem 8rem;
+      padding: 1rem 2rem 1rem 2rem;
 
       & .quote {
         text-align: left;
@@ -184,10 +184,10 @@ table {
     & .verse {
       display: block;
       margin: 0 auto;
-      padding: 1rem 8rem 1rem 8rem;
+      padding: 1rem 2rem 1rem 2rem;
 
       & .quote {
-        text-align: center;
+        text-align: left;
       }
       & .reference {
         text-align: right;
