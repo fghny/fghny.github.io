@@ -45,6 +45,10 @@ footer {
   }
 }
 
+table {
+  margin: 0 auto;
+}
+
 /* Navbar */
 .top-bar {
   text-align: center;
@@ -105,11 +109,12 @@ footer {
 
 .front-page {
   & a {
-    display: block;
-    font-size: 0.8rem;
-    text-align: center;
+    //display: block;
+    //font-size: 0.8rem;
+    //text-align: center;
   }
   &.en {
+    font-family: $en-fonts;
     & h2 {
       color: $dk-blue;
       text-align: center;
@@ -117,7 +122,7 @@ footer {
     }
     & h3 {
       color: $dk-blue;
-      text-align: center;
+      //text-align: center;
       font-family: $en-fonts;
     }
     & h4 {
@@ -127,13 +132,30 @@ footer {
     }
     & p {
       color: $lt-gray;
-      font-family: $en-fonts;
+      //font-family: $en-fonts;
+    }
+    & ul {
+      color: $lt-gray;
+      //font-family: $en-fonts;
     }
     & .instructions {
       text-align: center;
+    }
+    & .verse {
+      display: block;
+      margin: 0 auto;
+      padding: 1rem 8rem 1rem 8rem;
+
+      & .quote {
+        text-align: left;
+      }
+      & .reference {
+        text-align: right;
+      }
     }
   }
   &.kr {
+    font-family: $kr-fonts;
     & h2 {
       color: $dk-blue;
       text-align: center;
@@ -141,7 +163,7 @@ footer {
     }
     & h3 {
       color: $dk-blue;
-      text-align: center;
+      //text-align: center;
       font-family: $kr-fonts;
     }
     & h4 {
@@ -151,10 +173,25 @@ footer {
     }
     & p {
       color: $lt-gray;
-      font-family: $kr-fonts;
+      //font-family: $kr-fonts;
+    }
+    & ul {
+      color: $lt-gray;
     }
     & .instructions {
       text-align: center;
+    }
+    & .verse {
+      display: block;
+      margin: 0 auto;
+      padding: 1rem 8rem 1rem 8rem;
+
+      & .quote {
+        text-align: center;
+      }
+      & .reference {
+        text-align: right;
+      }
     }
   }
 }
