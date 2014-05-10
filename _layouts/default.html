@@ -9,7 +9,10 @@
     <!-- Custom CSS -->
     <script src="bower_components/modernizr/modernizr.js"></script>  
     <link rel="stylesheet" href="/css/app.css">
-  </head>
+    {% if page.url == "/404.html" %}
+      <meta http-equiv="refresh" content="5; url=/">
+    {% endif %}
+    </head>
     
   <body>
     <!-- Top Bar -->
