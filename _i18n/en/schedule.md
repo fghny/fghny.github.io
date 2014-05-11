@@ -40,7 +40,12 @@
     <td>3:30 - 4:30 PM</td>
     <td>Lord's Day Bible Reading</td>
   </tr>
-  
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
   <thead>
     <tr>
       <td>Wednesday</td>
@@ -57,6 +62,12 @@
     <td>8:30 - 9:30 PM</td>
     <td>Weekday Bible reading</td>
   </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
 
   <thead>
     <tr>
@@ -84,6 +95,11 @@
     <td>1:00 - 2:00 PM</td>
     <td>Third Session</td>
   </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 
   <thead>
     <tr>
@@ -100,6 +116,11 @@
     <td></td>
     <td>3:30 - 5:00 PM</td>
     <td>Fellowship and Refreshments</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
  

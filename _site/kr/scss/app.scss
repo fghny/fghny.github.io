@@ -46,10 +46,13 @@ footer {
 }
 
 table {
+  border-collapse: collapse;
   margin: 0 auto;
   border: none;
   & thead {
     background-color: transparent;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
   }
   & tr:nth-of-type(even) {
     background-color: transparent !important;

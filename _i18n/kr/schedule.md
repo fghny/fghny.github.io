@@ -35,7 +35,12 @@
     <td>오후 3:30 – 4:30</td>
     <td>주일 성경봉독</td>
   </tr>
-  
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
   <thead>
     <tr>
       <td>수요일</td>
@@ -51,6 +56,11 @@
     <td></td>
     <td>오후 8:30 – 9:30</td>
     <td>주중 성경봉독</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 
   <thead>
@@ -79,6 +89,11 @@
     <td>오후 1:00 – 2:00</td>
     <td>셋째 시간</td>
   </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 
   <thead>
     <tr>
@@ -95,6 +110,11 @@
     <td></td>
     <td>오후 3:30 – 5:00</td>
     <td>애찬과 교제 (Q & A)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
  
