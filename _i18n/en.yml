@@ -1,7 +1,7 @@
 titles:
   home: Flushing Gospel Hall
   about: About Us
-  services: Services
+  meetings: Meetings
   location: Location
   contact: Contact Us
 global:
@@ -10,7 +10,7 @@ global:
 menu:
   home: Home
   about: About Us
-  services: Services
+  meetings: Meetings
   location: Location
   contact: Contact Us
 home:

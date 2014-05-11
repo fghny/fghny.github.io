@@ -1,2 +1,2 @@
-<a href="/services" class="link">Learn more about our meetings</a>
+<a href="/meetings" class="link">Learn more about our meetings</a>
 

@@ -1,7 +1,7 @@
 titles:
   home: 플러싱 가스펠 홀
   about: About Us (KR)
-  services: 플러싱 모임을 방문할 때
+  meetings: 집회
   location: 위치
   contact: 연라
 global:
@@ -10,7 +10,7 @@ global:
 menu:
   home: 홈
   about: 모임 소개
-  services: 플러싱 모임을 방문할 때
+  meetings: 집회
   location: 위치
   contact: 연락
 home:
