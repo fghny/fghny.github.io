@@ -47,6 +47,34 @@ footer {
 
 table {
   margin: 0 auto;
+  border: none;
+  & thead {
+    background-color: transparent;
+  }
+  & tr:nth-of-type(even) {
+    background-color: transparent !important;
+  }
+
+}
+
+/* 404 */
+.four-oh-four {
+  .en {
+    h1 {
+      text-align: center;
+      font-style: bold;
+      color: $lt-blue;
+      font-family: $en-fonts;
+    }
+  }  
+  .kr {
+    h1 {
+      text-align: center;
+      font-style: bold;
+      color: $lt-blue;
+      font-family: $kr-fonts;
+    }
+  }
 }
 
 /* Navbar */
