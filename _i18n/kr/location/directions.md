@@ -1,1 +1,1 @@
-Directions to Flushing Gospel Hall by car or mass transit can found using the map above. (KR)
+위의 지도를 이용해서 플러싱 가스펠홀을 찿아 올수 있습니다. 

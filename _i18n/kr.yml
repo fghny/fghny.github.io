@@ -2,9 +2,8 @@ titles:
   home: 플러싱 가스펠 홀
   about: About Us (KR)
   services: 플러싱 모임을 방문할 때
-  location: Location (KR)
-  contact: Contact Us (KR)
-  404: Page Not Found (KR)
+  location: 위치
+  contact: 연라
 global:
   english: English
   korean: 한국어
@@ -12,10 +11,10 @@ menu:
   home: 홈
   about: 모임 소개
   services: 플러싱 모임을 방문할 때
-  location: Location (KR)
+  location: 위치
   contact: 연락
 home:
   title: 주 예수 그리스도의  이름으로 뉴욕의 풀러싱에 모이는 성도들
   welcome: 모임 안내
   schedule: 플러싱 모임의 정기집회
-  location: Location (KR)
+  location: 위치

@@ -54,7 +54,9 @@ title: titles.home
     <div class="front-page {{ site.lang }}">
       <h2>{% t home.schedule %}</h2>
       {% tf schedule.md %}
-      {% tf schedule_link.md %}
+      <div class="center-link">
+        {% tf schedule_link.md %}
+      </div>
       </br>
     </div>
   </div>
@@ -63,8 +65,10 @@ title: titles.home
     <div class="front-page {{ site.lang }}">
       <h2>{% t home.location %}</h2>
       {% tf location.md %}
-      {% tf location_link.md %}
-
+      </br>
+      <div class="center-link">
+        {% tf location_link.md %}
+      </div>
       </br>
     </div>
   </div>

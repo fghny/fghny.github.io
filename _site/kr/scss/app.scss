@@ -172,6 +172,9 @@ table {
     & .instructions {
       text-align: center;
     }
+    & .center-link {
+      text-align: center;
+    }
     & .verse {
       //display: block;
       //margin: 0 auto;
@@ -210,6 +213,9 @@ table {
       color: $lt-gray;
     }
     & .instructions {
+      text-align: center;
+    }
+    & .center-link {
       text-align: center;
     }
     & .verse {
