@@ -23,12 +23,28 @@ module.exports = function(grunt) {
         files: 'scss/**/*.scss',
         tasks: ['sass']
       }
+    },
+    
+    cssmin: {
+      'dist': {
+        'src': ['css/app.css'],
+        'dest': 'css/app.min.css'
+      }
+    },
+
+    min: {
+      'dist': {
+        'src': ['bower_components/modernizr/modernizr.js', 'js/vendor/fastclick.js', 'js/vendor/jquery.js', 'js/foundation/foundation.js', 'js/foundation/foundation.topbar.js', 'js/footer.js'],
+        'dest': 'js/fgh.min.js'
+      }
     }
+
   });
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-yui-compressor');
 
-  grunt.registerTask('build', ['sass']);
+  grunt.registerTask('build', ['sass', 'cssmin', 'min']);
   grunt.registerTask('default', ['build','watch']);
 }
