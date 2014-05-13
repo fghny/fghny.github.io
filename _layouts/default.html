@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Custom CSS -->
-    <script src="bower_components/modernizr/modernizr.js"></script>  
+    <!-- <script src="js/vendor/modernizr.js"></script> -->
     <!-- <link rel="stylesheet" href="/css/app.css"> -->
     <link rel="stylesheet" href="/css/app.min.css">
     {% if page.url == "/404.html" %}
@@ -109,19 +109,15 @@
     <!-- END Footer -->
 
     <!-- Javascript -->
-    <!-- <script src="{{ baseurl }}/js/vendor/jquery.js"></script> -->
+    <script src="{{ baseurl }}/js/vendor/jquery.js"></script>
+    <script src="{{ baseurl }}/js/fgh.min.js"></script>
     <!-- <script src="{{ baseurl }}/js/vendor/fastclick.js"></script> -->
-    <!-- <script src="{{ baseurl }}/js/foundation/foundation.js"></script> --> 
+    <!-- <script src="{{ baseurl }}/js/foundation/foundation.js"></script> -->
     <!-- <script src="{{ baseurl }}/js/foundation/foundation.topbar.js"></script> -->
     <!-- <script src="js/app.js"></script> -->
     <!-- Sticky Footer -->
-    <!-- <script src="{{ baseurl }}/js/footer.js"></script> --> 
-    <script src="{{ baseurl }}/js/fgh.min.js"></script>
+    <!-- <script src="{{ baseurl }}/js/footer.js"></script> -->
     
     <!-- Foundation JS -->
-    <script>
-      $(document).foundation({
-      });
-    </script>
   </body>
 </html>

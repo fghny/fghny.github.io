@@ -34,7 +34,7 @@ module.exports = function(grunt) {
 
     min: {
       'dist': {
-        'src': ['bower_components/modernizr/modernizr.js', 'js/vendor/fastclick.js', 'js/vendor/jquery.js', 'js/foundation/foundation.js', 'js/foundation/foundation.topbar.js', 'js/footer.js'],
+        'src': ['js/vendor/modernizr.js', 'js/vendor/fastclick.js', 'js/foundation/foundation.js', 'js/foundation/foundation.topbar.js', 'js/footer.js', 'js/app.js'],
         'dest': 'js/fgh.min.js'
       }
     }
