@@ -138,6 +138,13 @@ table {
   }
 }
 
+/* Hide image if on mobile */
+@media #{$small-only} {
+  .front-image {
+    display: none;
+  }
+}
+
 .front-page {
   & a {
     //display: block;
