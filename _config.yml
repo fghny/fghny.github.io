@@ -6,3 +6,5 @@ plugins: _plugin
 markdown: redcarpet
 pygments: true
 languages: ["en", "kr"]
+
+exclude: ["bower_components", "node_modules", "scss", "bower.json", "Gemfile", "Gemfile.lock", "Gruntfile.js", "package.json", "rakefile.rb", "run.sh", "test.sh"]

@@ -127,7 +127,7 @@ table {
     font-style: bold;
     text-align: center;
     font-size: 0.8rem;
-    padding: 0 2em 0 2em;
+    padding: 0 1em 0 1em;
     color: $lt-gray;
   }
   .en {
@@ -175,16 +175,33 @@ table {
     & .center-link {
       text-align: center;
     }
-    & .verse {
-      //display: block;
-      //margin: 0 auto;
-      padding: 1rem 1rem 1rem 1rem;
+    @media #{$small-up} {
+      & .verse {
+        //display: block;
+        //margin: 0 auto;
+        padding: 1rem 1rem 1rem 1rem;
 
-      & .quote {
-        text-align: left;
+        & .quote {
+          text-align: left;
+        }
+        & .reference {
+          text-align: right;
+        }
       }
-      & .reference {
-        text-align: right;
+    }
+
+    @media #{$medium-up} {
+      & .verse {
+        //display: block;
+        //margin: 0 auto;
+        padding: 1rem 10rem 1rem 10rem;
+
+        & .quote {
+          text-align: left;
+        }
+        & .reference {
+          text-align: right;
+        }
       }
     }
   }
@@ -218,16 +235,33 @@ table {
     & .center-link {
       text-align: center;
     }
-    & .verse {
-      //display: block;
-      //margin: 0 auto;
-      padding: 1rem 1rem 1rem 1rem;
+    @media #{$small-up} {
+      & .verse {
+        //display: block;
+        //margin: 0 auto;
+        padding: 1rem 1rem 1rem 1rem;
 
-      & .quote {
-        text-align: left;
+        & .quote {
+          text-align: left;
+        }
+        & .reference {
+          text-align: right;
+        }
       }
-      & .reference {
-        text-align: right;
+    }
+
+    @media #{$medium-up} {
+      & .verse {
+        //display: block;
+        //margin: 0 auto;
+        padding: 1rem 10rem 1rem 10rem;
+
+        & .quote {
+          text-align: left;
+        }
+        & .reference {
+          text-align: right;
+        }
       }
     }
   }
