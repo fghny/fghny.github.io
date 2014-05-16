@@ -1,7 +1,6 @@
 name: Flushing Gospel Hall
 safe: false
 baseurl: flushinggospelhall.org
-url: http://flushinggospelhall.org
 permalink: pretty
 plugins: _plugin
 markdown: redcarpet
