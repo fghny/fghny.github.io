@@ -8,3 +8,5 @@ Jekyll Project Layout
     |_  post.html
 |_  _posts
     |_  YYYY-MM-DD-title.md
+
+Store news posts (pictures) in assets folder
