@@ -53,6 +53,10 @@ table {
     background-color: transparent;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    & tr td.asterisk {
+      font-style: italic;
+      font-size: 0.8em;
+    }
   }
   & tr:nth-of-type(even) {
     background-color: transparent !important;
@@ -182,6 +186,10 @@ table {
     & .center-link {
       text-align: center;
     }
+    & .news-date {
+      color: $lt-gray;
+      text-align: center;
+    }
     @media #{$small-up} {
       & .verse {
         //display: block;
@@ -192,6 +200,7 @@ table {
           text-align: left;
         }
         & .reference {
+          font-style: italic;
           text-align: right;
         }
       }
@@ -201,12 +210,13 @@ table {
       & .verse {
         //display: block;
         //margin: 0 auto;
-        padding: 1rem 10rem 1rem 10rem;
+        padding: 1rem 10rem 0rem 10rem;
 
         & .quote {
           text-align: left;
         }
         & .reference {
+          font-style: italic;
           text-align: right;
         }
       }
@@ -242,6 +252,10 @@ table {
     & .center-link {
       text-align: center;
     }
+    & .news-date {
+      color: $lt-gray;
+      text-align: center;
+    }
     @media #{$small-up} {
       & .verse {
         //display: block;
@@ -252,6 +266,7 @@ table {
           text-align: left;
         }
         & .reference {
+          font-style: italic;
           text-align: right;
         }
       }
@@ -261,12 +276,13 @@ table {
       & .verse {
         //display: block;
         //margin: 0 auto;
-        padding: 1rem 10rem 1rem 10rem;
+        padding: 1rem 10rem 0rem 10rem;
 
         & .quote {
           text-align: left;
         }
         & .reference {
+          font-style: italic;
           text-align: right;
         }
       }

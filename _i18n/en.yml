@@ -1,20 +1,28 @@
 titles:
-  home: Flushing Gospel Hall
-  about: About Us
-  meetings: Meetings
-  location: Location
-  contact: Contact Us
+  home: "Flushing Gospel Hall"
+  about: "About Us"
+  meetings: "Meetings"
+  location: "Location"
+  contact: "Contact Us"
+  vbs: "Vacation Bible School"
+  news: "News"
 global:
-  english: English
-  korean: 한국어
+  english: "English"
+  korean: "한국어"
 menu:
-  home: Home
-  about: About Us
-  meetings: Meetings
-  location: Location
-  contact: Contact Us
+  home: "Home"
+  about: "About Us"
+  meetings: "Meetings"
+  location: "Location"
+  contact: "Contact Us"
+  vbs: "Vacation Bible School"
+  news: "News"
 home:
-  title: Christians gathered together unto the name of the Lord Jesus Christ at Flushing, New York
-  welcome: Welcome
-  schedule: Schedule of Regular Meetings
-  location: Location
+  title: "Christians gathered together unto the name of the Lord Jesus Christ at Flushing, New York"
+  welcome: "Welcome"
+  schedule: "Schedule of Regular Meetings"
+  location: "Location"
+  vbs: "Vacation Bible School"
+  news: "News"
+
+

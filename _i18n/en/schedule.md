@@ -73,7 +73,7 @@
     <tr>
       <td>Saturday</td>
       <td>Monthly Youth Meeting</td>
-      <td>(Date announced monthly)</td>
+      <td class="asterisk">* Date announced monthly</td>
     </tr>
   </thead>
   <tr>
@@ -105,7 +105,7 @@
     <tr>
       <td>Saturday</td>
       <td>Monthly ESL Gosepl Outreach</td>
-      <td>(Date announced monthly)</td>
+      <td class="asterisk">* Date announced monthly</td>
     </tr>
   </thead>
   <tr>

@@ -4,10 +4,10 @@ title: titles.home
 ---
 <div class="row">
     <div class="main-title">
-      <h1 class={{ site.lang }}>{% t titles.home %}</h1>
+      <h1 class="{{ site.lang }}">{% t titles.home %}</h1>
     </div>
     <div class="sub-title">
-      <h5 class={{ site.lang }}>{% t home.title %}</h5>
+      <h5 class="{{ site.lang }}">{% t home.title %}</h5>
     </div>
 </div>
 
@@ -35,7 +35,6 @@ title: titles.home
           <div class="quote">
             {% tf welcome_verse.md %}
           </div>
-          </br>
           <div class="reference">
             {% tf welcome_verse_reference.md %}
           </div>
@@ -46,12 +45,28 @@ title: titles.home
       </br>
     </div>
   </div>
-</div>
-
-<div class="row">
   <!-- Divider -->
   <hr />
 
+</div>
+
+<!-- News -->
+{% if site.posts.size > 0 %}
+<div class="row">
+  <div class="front-page {{ site.lang }}">
+    <h2>{% t home.news %}</h2>
+    {% for post in site.posts %}
+      {{ post.excerpt }}
+      <div class="news-date">
+        {{ post.date | date: "%-d %B %Y" }}
+      </div>
+      <hr />
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<div class="row">
   <div class="large-8 columns">
     <div class="front-page {{ site.lang }}">
       <h2>{% t home.schedule %}</h2>
