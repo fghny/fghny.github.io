@@ -3,8 +3,18 @@
     
     
     
+    
+    
     <url>
-        <loc>http://flushinggospelhall.org/about/</loc>
+        <loc>http://flushinggospelhall.org/meetings/</loc>
+    </url>
+    
+    
+    
+    
+    
+    <url>
+        <loc>http://flushinggospelhall.org/location/</loc>
     </url>
     
     
@@ -20,14 +30,6 @@
     
     
     <url>
-        <loc>http://flushinggospelhall.org/meetings/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
         <loc>http://flushinggospelhall.org/contact/</loc>
     </url>
     
@@ -36,10 +38,8 @@
     
     
     <url>
-        <loc>http://flushinggospelhall.org/location/</loc>
+        <loc>http://flushinggospelhall.org/about/</loc>
     </url>
-    
-    
     
     
     
