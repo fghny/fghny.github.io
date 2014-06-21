@@ -3,6 +3,7 @@
 @import "foundation";
 
 @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
 //================ Variables ================
 // Colors
 $white: #FFFFFF;
@@ -15,7 +16,7 @@ $lt-gray: #6F7072;
 $en-fonts: Garamond, serif;
 
 // Korean Font Family
-$kr-fonts: "Nanum Myeongjo", serif;
+$kr-fonts: '돋움', Dotum, "Nanum Myeongjo", Garamond, serif;
  
 //================== Styles =================
 /* HTML */
