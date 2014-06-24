@@ -3,16 +3,8 @@ layout: default
 title: titles.contact
 ---
 <div class="row">
-  <div class="large-12 columns">
-    <div class="contact-page">
-      <!-- {% tf contact/contact.md %} -->
-    </div>
-  </div>
-</div>
-
-<div class="row">
   <div class="large-8 large-offset-2 columns">
-    <div class="front-page kr">
+    <div class="front-page {{ site.lang }}">
       {% tf contact/title.md %}
       {% tf contact/question.md %}
     </div>
@@ -22,7 +14,7 @@ title: titles.contact
 <form action="http://forms.brace.io/flushing.gospel.hall.ny@gmail.com" role="form" method="POST">
   <div class="row">
     <div class="large-6 large-offset-2 columns">
-      <div class="front-page kr">
+      <div class="front-page {{ site.lang }}">
         <div class="form-group">
           <label for="name">{% tf contact/contact_name.html %}
             <input type="text" name="name" class="form-control" required>
@@ -34,7 +26,7 @@ title: titles.contact
 
   <div class="row">
     <div class="large-6 large-offset-2 columns">
-      <div class="front-page kr">
+      <div class="front-page {{ site.lang }}">
         <div class="form-group">
           <label for="_replyto">{% tf contact/contact_email.html %}
             <input type="email" name="_replyto" class="form-control" required>
@@ -46,7 +38,7 @@ title: titles.contact
 
   <div class="row">
     <div class="large-6 large-offset-2 columns">
-      <div class="front-page kr">
+      <div class="front-page {{ site.lang }}">
         <div class="form-group">
           <label for="phone_number">{% tf contact/contact_phone.html %}
             <input type="tel" name="phone_number" class="form-control">
@@ -59,7 +51,7 @@ title: titles.contact
 
   <div class="row">
     <div class="large-8 large-offset-2 columns">
-      <div class="front-page kr">
+      <div class="front-page {{ site.lang }}">
         <div class="form-group">
           <label for="message">{% tf contact/contact_message.html %}
             <textarea name="message" class="form-control"></textarea>
@@ -71,7 +63,7 @@ title: titles.contact
 
   <div class="row">
     <div class="large-4 large-offset-2 columns">
-      <div class="front-page kr">
+      <div class="front-page {{ site.lang }}">
         <div>
           {% if site.lang == 'en' %}
             <input type="hidden" name="_next" value="//flushinggospelhall.org/thanks/">  
