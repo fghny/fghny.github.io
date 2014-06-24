@@ -1,3 +1,3 @@
-## Thank you for getting in touch with us
+## Thank you for getting in touch with us!
 
-*We will reply to your message as soon as possible!*
+## We will reply to your message as soon as possible!
