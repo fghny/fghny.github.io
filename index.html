@@ -11,16 +11,16 @@ title: titles.home
     </div>
 </div>
 
-<!-- <div class="row"> -->
-<!--   <div class="large-12 columns"> -->
-     <!-- Front Page Image -->
-<!--     <div class="front-image"> --> 
-<!--       <hr /> -->
-<!--       <img src="http://placehold.it/1000x400&text=[ IMG 1 ]"/> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </div> -->
 
+<!-- News -->
+
+<div class="row">
+  <div class="large-12 columns">
+    <div class="front-page {{ site.lang }}">
+     
+    </div>
+  </div>
+</div>
 
 <div class="row">
   <!-- Divider -->
@@ -49,22 +49,6 @@ title: titles.home
   <hr />
 
 </div>
-
-<!-- News -->
-{% if site.posts.size > 0 %}
-<div class="row">
-  <div class="front-page {{ site.lang }}">
-    <h2>{% t home.news %}</h2>
-    {% for post in site.posts %}
-      {{ post.excerpt }}
-      <div class="news-date">
-        {{ post.date | date: "%-d %B %Y" }}
-      </div>
-      <hr />
-    {% endfor %}
-  </div>
-</div>
-{% endif %}
 
 <div class="row">
   <div class="large-8 columns">

@@ -7,24 +7,37 @@ title: titles.vbs
     <div class="front-page {{ site.lang }}">
       {% tf vbs/title.md %}
       </br>
-      {% tf vbs/vbs_intro.md %}
-      <div class="verse">
-        <div class="quote">
-          {% tf vbs/vbs_verse.md %}
-        </div>
-        </br>
-        <div class="reference">
-          {% tf vbs/vbs_verse_reference.md %}
-        </div>
+    {% tf vbs/vbs_intro.md %}
+    <div class="verse">
+      <div class="quote">
+        {% tf vbs/vbs_verse.md %}
       </div>
-      
       </br>
-  
-      {% tf vbs/vbs_body.md %}
-    
-      {% tf vbs/vbs_schedule.md %}
-  </div>
-
+    <div class="reference">
+      {% tf vbs/vbs_verse_reference.md %}
     </div>
   </div>
+
+<!-- Register now -->
+<div class="row">
+  <div class="large-12 columns">
+    <div class="front-page {{ site.lang }}">
+      <div class="text-center">
+        {% if site.lang == 'en' %}
+        <a href="//flushinggospelhall.org/vbs_registration/" class="button success radius">Sign up for VBS 2014!</a>
+        {% else if site.lang == "kr" %}
+        <a href="//flushinggospelhall.org/kr/vbs_registration/" class="button success radius">Sign up for VBS 2014! (KR)</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+</br>
+
+{% tf vbs/vbs_body.md %}
+
+{% tf vbs/vbs_schedule.md %}
+</div>
+
+</div>
 </div>
