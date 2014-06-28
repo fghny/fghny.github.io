@@ -5,8 +5,10 @@ titles:
   location: "Location"
   contact: "Contact Us"
   vbs: "Vacation Bible School"
+  vbs_registration: "Register for VBS"
+  vbs_thanks: "Thank You for Registering"
   news: "News"
-  thanks: "Thank You!"
+  thanks: "Thank You for Your Message"
 global:
   english: "English"
   korean: "한국어"
