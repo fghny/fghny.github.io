@@ -1,0 +1,1 @@
+Registration is still open! **[Learn more](/kr/vbs/)** or <a href="/kr/vbs_registration/" class="button tiny success radius">Sign up for VBS 2014!</a>

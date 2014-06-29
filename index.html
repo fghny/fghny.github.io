@@ -11,17 +11,6 @@ title: titles.home
     </div>
 </div>
 
-
-<!-- News -->
-
-<div class="row">
-  <div class="large-12 columns">
-    <div class="front-page {{ site.lang }}">
-     
-    </div>
-  </div>
-</div>
-
 <div class="row">
   <!-- Divider -->
   <hr />
@@ -48,6 +37,28 @@ title: titles.home
   <!-- Divider -->
   <hr />
 
+</div>
+
+
+<!-- News -->
+<div class="row">
+  <div class="large-12 columns">
+    <div class="front-page {{ site.lang }}">
+      <h2>{% t home.news %}</h2>
+      {% if site.lang == "en" %}
+        <img src="{{site.baseurl_url }}/img/vbs_eng.jpg" alt="VBS 2014" class="img center">
+      {% else if site.lang == "kr" %}
+        <img src="{{site.baseurl_url }}/kr/img/vbs_kor.jpg" alt="VBS 2014" class="img center">
+      {% endif %}
+      </br>
+      <div class="text-center">
+        {% tf news.md %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <hr />
 </div>
 
 <div class="row">
