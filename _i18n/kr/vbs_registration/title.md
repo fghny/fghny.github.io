@@ -1,1 +1,1 @@
-## VBS 2014 Registration (KR)
+## 2014 여름성경학교(VBS) 등록
