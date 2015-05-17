@@ -18,6 +18,14 @@ title: titles.vbs
     </div>
   </div>
 
+<div class="row text-center">
+{% if site.lang == 'en' %}
+  <a href="/vbs_registration" class="button success">Register Now!</a>
+{% else if site.lang == "kr" %}
+  <a href="/kr/vbs_registration" class="button success">Register Now!</a>
+{% endif %}
+</div>
+
 {% tf vbs/vbs_body.md %}
 
 {% tf vbs/vbs_schedule.md %}

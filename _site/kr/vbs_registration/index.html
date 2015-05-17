@@ -46,7 +46,7 @@
               <a href="/kr/meetings">집회</a>
             </li>
             <!-- <li class="has-form"> -->
-            <!--  <a href="/kr/vbs">여름 성경 학교</a> -->
+            <!--   <a href="/kr/vbs">여름 성경 학교</a> -->
             <!-- </li> -->
             <li class="has-form">
               <a href="/kr/location">위치</a>
@@ -76,7 +76,7 @@
     <div class="row">
   <div class="large-12 columns">
     <div class="front-page kr">
-      <h2>2014 여름성경학교(VBS) 등록</h2>
+      <h2>2015 여름성경학교(VBS) 등록</h2>
 
       </br>
       <div class="text-center">
@@ -88,7 +88,7 @@
 
 </br>
 
-<form action="http://forms.brace.io/flushing.gospel.hall.ny@gmail.com" role="form" method="POST">
+<form action="http://formspree.io/flushing.gospel.hall.ny@gmail.com" role="form" method="POST">
   <!-- ROW -->
 
     
@@ -207,7 +207,7 @@
       <legend>부모/보호자의 정보</legend>
       
       <div class="row">
-      <div class="large-4 columns">
+      <div class="large-6 columns">
         <div class="kr">
           <div class="form-group">
             <label for="parentname">귀하의 성함은 무엇입니까? *
@@ -216,23 +216,35 @@
           </div>
         </div>
       </div>
-
-      <div class="large-4 columns">
+      
+      <div class="large-6 columns">
         <div class="kr">
           <div class="form-group">
-            <label for="phone_number">귀하의 연락처는 몇 번 입니까? *
+            <label for="_replyto">귀하의 이메일 주소는 무엇입니까? *
+            <input type="email" name="_replyto" class="form-control" placeholder="ex: you@example.com" required>
+          </label>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+      <div class="large-6 columns">
+        <div class="kr">
+          <div class="form-group">
+            <label for="phone_number">가장 우선적으로 사용하는 귀하의 연락처는 몇 번 입니까? *
               <input type="tel" name="phone_number" class="form-control" placeholder="ex: (123)456-7890" required>
             </label>
           </div>
         </div>
       </div>
 
-      <div class="large-4 columns">
+      <div class="large-6 columns">
         <div class="kr">
           <div class="form-group">
-            <label for="_replyto">귀하의 이메일 주소는 무엇입니까? *
-            <input type="email" name="_replyto" class="form-control" placeholder="ex: you@example.com" required>
-          </label>
+            <label for="phone_number">주된 연락처의 연락이 안될 경우,  대체 전화번호는 몇 번 입니까?
+              <input type="tel" name="phone_number" class="form-control" placeholder="ex: (123)456-7890">
+            </label>
           </div>
         </div>
       </div>
@@ -293,7 +305,7 @@
       <legend>비상 연락처</legend>
       
       <div class="row">
-      <div class="large-4 columns">
+      <div class="large-6 columns">
         <div class="kr">
           <div class="form-group">
             <label for="emergency_contact_name">비상 연락처에 적힌 분의 이름은 무엇입니까? *
@@ -303,7 +315,7 @@
         </div>
       </div>
 
-      <div class="large-4 columns">
+      <div class="large-6 columns">
         <div class="kr">
           <div class="form-group">
             <label for="emergency_contact_relationship">비상 연락처에 적힌 분은 귀하의 자녀와 어떤 관계에 있습니까? *
@@ -312,11 +324,24 @@
           </div>
         </div>
       </div>
-
-      <div class="large-4 columns">
+      </div>
+      
+      <div class="row">
+      <div class="large-6 columns">
         <div class="kr">
           <div class="form-group">
-            <label for="emergency_contact_phone">비상 연락처에 적힌 분의 전화번호는 무엇입니까? *
+            <label for="emergency_contact_phone">귀하의 주된 전화번호는 무엇입니까? *
+              <input type="text" name="emergency_contact_phone" class="form-control" placeholder="ex: (123)456-7890
+" required>
+            </label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="large-6 columns">
+        <div class="kr">
+          <div class="form-group">
+            <label for="emergency_contact_phone">귀하의 대체 연락처는 몇 번 입니까?
               <input type="text" name="emergency_contact_phone" class="form-control" placeholder="ex: (123)456-7890
 " required>
             </label>
@@ -334,21 +359,23 @@
       <legend>기타</legend>
       
       <div class="row">
-        <div class="large-6 columns">
+        <div class="large-12 columns">
           <div class="kr">
             <div class="form-group">
               <label for="hear_about">저희 VBS에 대해 어떤 경로를 통해 듣게 되셨습니까?
-                <input type="text" name="hear_about" class="form-control">
+                <textarea name="hear_about" class="form-control" rows=2></textarea>
               </label>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="large-6 columns">
+      <div class="row">
+        <div class="large-12 columns">
           <div class="kr">
             <div class="form-group">
               <label for="church_name">현재 어떤 교회에 다니고 계십니까?
-                <input type="text" name="church_name" class="form-control">
+                <textarea name="church_name" class="form-control" rows=2></textarea>
               </label>
             </div>
           </div>
@@ -383,7 +410,7 @@
           </div>
           <div class="large-4 columns">
             <div class="copyright kr">
-              &copy; 2014 플러싱 가스펠 홀
+              &copy; 2015 플러싱 가스펠 홀
             </div>
           </div>
           <div class="large-4 columns">
