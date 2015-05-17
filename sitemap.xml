@@ -4,15 +4,7 @@
     
     
     <url>
-        <loc>http://flushinggospelhall.org/location/</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://flushinggospelhall.org/vbs/</loc>
+        <loc>http://flushinggospelhall.org/thanks/</loc>
     </url>
     
     
@@ -27,10 +19,8 @@
     
     
     
-    
-    
     <url>
-        <loc>http://flushinggospelhall.org/thanks/</loc>
+        <loc>http://flushinggospelhall.org/vbs_thanks/</loc>
     </url>
     
     
@@ -38,7 +28,7 @@
     
     
     <url>
-        <loc>http://flushinggospelhall.org/about/</loc>
+        <loc>http://flushinggospelhall.org/vbs/</loc>
     </url>
     
     
@@ -62,6 +52,16 @@
     
     
     <url>
+        <loc>http://flushinggospelhall.org/about/</loc>
+    </url>
+    
+    
+    
+    
+    
+    
+    
+    <url>
         <loc>http://flushinggospelhall.org/contact/</loc>
     </url>
     
@@ -70,7 +70,7 @@
     
     
     <url>
-        <loc>http://flushinggospelhall.org/vbs_thanks/</loc>
+        <loc>http://flushinggospelhall.org/location/</loc>
     </url>
     
     
