@@ -38,7 +38,7 @@ title: titles.vbs_registration
           <div class="{{ site.lang }}">
             <div class="form-group">
               <label for="date_of_birth">{% tf vbs_registration/02_dob.html %}
-                <input type="text" name="dob" class="form-control" placeholder="{% tf vbs_registration/02_placeholder.html %}" required>
+                <input type="text" name="date_of_birth" class="form-control" placeholder="{% tf vbs_registration/02_placeholder.html %}" required>
               </label>
             </div>
           </div>
@@ -83,7 +83,7 @@ title: titles.vbs_registration
         <div class="large-12 columns">
           <div class="{{ site.lang }}">
             <div class="form-group">
-              <label for="medical_condition">{% tf vbs_registration/06_medicalcondition.html %}
+              <label for="medical_condition">{% tf vbs_registration/06_medical_condition.html %}
                 <textarea name="medical_condition" class="form-control" placeholder="{% tf vbs_registration/06_placeholder.html %}" rows=2 required></textarea>
               </label>
             </div>
@@ -95,9 +95,9 @@ title: titles.vbs_registration
         <div class="large-4 columns">
           <div class="{{ site.lang }}">
             <div class="form-group">
-              <label>{% tf vbs_registration/07_mediapermission.html %}</label>
-              <input type="radio" name="mediapermission" value="Yes"><label for="mediapermission">{% tf vbs_registration/yes.html %}
-              <input type="radio" name="mediapermission" value="No"><label for="mediapermission">{% tf vbs_registration/no.html %}
+              <label>{% tf vbs_registration/07_media_permission.html %}</label>
+              <input type="radio" name="media_permission" value="Yes"><label for="media_permission">{% tf vbs_registration/yes.html %}
+              <input type="radio" name="media_permission" value="No"><label for="media_permission">{% tf vbs_registration/no.html %}
             </div>
           </div>
         </div>
@@ -105,9 +105,9 @@ title: titles.vbs_registration
         <div class="large-4 columns">
           <div class="{{ site.lang }}">
             <div class="form-group">
-              <label>{% tf vbs_registration/08_handsanitizer.html %}</label>
-              <input type="radio" name="handsanitizer" value="Yes"><label for="handsanitizer">{% tf vbs_registration/yes.html %}
-              <input type="radio" name="handsanitizer" value="No"><label for="handsanitizer">{% tf vbs_registration/no.html %}
+              <label>{% tf vbs_registration/08_hand_sanitizer.html %}</label>
+              <input type="radio" name="hand_sanitizer" value="Yes"><label for="hand_sanitizer">{% tf vbs_registration/yes.html %}
+              <input type="radio" name="hand_sanitizer" value="No"><label for="hand_sanitizer">{% tf vbs_registration/no.html %}
             </div>
           </div>
         </div>
@@ -115,8 +115,8 @@ title: titles.vbs_registration
         <div class="large-4 columns">
           <div class="{{ site.lang }}">
             <div class="form-group">
-              <label for="tshirtsize">{% tf vbs_registration/09_tshirtsize.html %}
-                <input type="text" name="tshirtsize" class="form-control">
+              <label for="tshirt_size">{% tf vbs_registration/09_tshirt_size.html %}
+                <input type="text" name="tshirt_size" class="form-control">
               </label>
             </div>
           </div>
@@ -138,8 +138,8 @@ title: titles.vbs_registration
       <div class="large-6 columns">
         <div class="{{ site.lang }}">
           <div class="form-group">
-            <label for="parentname">{% tf vbs_registration/10_parentname.html %}
-              <input type="text" name="parentname" class="form-control" required>
+            <label for="guardian_name">{% tf vbs_registration/10_guardian_name.html %}
+              <input type="text" name="guardian_name" class="form-control" required>
             </label>
           </div>
         </div>
@@ -160,8 +160,8 @@ title: titles.vbs_registration
       <div class="large-6 columns">
         <div class="{{ site.lang }}">
           <div class="form-group">
-            <label for="phone_number">{% tf vbs_registration/12_primary_phone.html %}
-              <input type="tel" name="phone_number" class="form-control" placeholder="{% tf vbs_registration/12_placeholder.html %}" required>
+            <label for="primary_phone">{% tf vbs_registration/12_primary_phone.html %}
+              <input type="tel" name="primary_phone" class="form-control" placeholder="{% tf vbs_registration/12_placeholder.html %}" required>
             </label>
           </div>
         </div>
@@ -170,8 +170,8 @@ title: titles.vbs_registration
       <div class="large-6 columns">
         <div class="{{ site.lang }}">
           <div class="form-group">
-            <label for="phone_number">{% tf vbs_registration/13_alternate_phone.html %}
-              <input type="tel" name="phone_number" class="form-control" placeholder="{% tf vbs_registration/13_placeholder.html %}">
+            <label for="alternate_phone">{% tf vbs_registration/13_alternate_phone.html %}
+              <input type="tel" name="alternate_phone" class="form-control" placeholder="{% tf vbs_registration/13_placeholder.html %}">
             </label>
           </div>
         </div>
@@ -258,8 +258,8 @@ title: titles.vbs_registration
       <div class="large-6 columns">
         <div class="{{ site.lang }}">
           <div class="form-group">
-            <label for="emergency_contact_phone">{% tf vbs_registration/20_emergency_primary_phone.html %}
-              <input type="text" name="emergency_contact_phone" class="form-control" placeholder="{% tf vbs_registration/20_placeholder.html %}" required>
+            <label for="emergency_primary_phone">{% tf vbs_registration/20_emergency_primary_phone.html %}
+              <input type="text" name="emergency_primary_phone" class="form-control" placeholder="{% tf vbs_registration/20_placeholder.html %}" required>
             </label>
           </div>
         </div>
@@ -268,8 +268,8 @@ title: titles.vbs_registration
       <div class="large-6 columns">
         <div class="{{ site.lang }}">
           <div class="form-group">
-            <label for="emergency_contact_phone">{% tf vbs_registration/21_emergency_alternate_phone.html %}
-              <input type="text" name="emergency_contact_phone" class="form-control" placeholder="{% tf vbs_registration/21_placeholder.html %}">
+            <label for="emergency_alternate_phone">{% tf vbs_registration/21_emergency_alternate_phone.html %}
+              <input type="text" name="emergency_alternate_phone" class="form-control" placeholder="{% tf vbs_registration/21_placeholder.html %}">
             </label>
           </div>
         </div>
