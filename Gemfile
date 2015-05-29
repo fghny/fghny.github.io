@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
-gem 'jekyll', '~> 1.5.1'
-gem 'jekyll-multiple-languages-plugin'
+gem 'jekyll', '~> 2.5.3'
+gem 'jekyll-multiple-languages-plugin', '~> 1.2.9'

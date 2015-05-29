@@ -1,6 +1,6 @@
 {
-  "name": "foundation-libsass-template",
-  "dependencies": {
-    "foundation": "zurb/bower-foundation"
-  }
+    "name": "fghny",
+    "dependencies": {
+       "foundation": "~5.5.2"
+    }
 }

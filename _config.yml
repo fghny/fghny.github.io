@@ -5,7 +5,30 @@ url: http://flushinggospelhall.org
 permalink: pretty
 plugins: _plugin
 markdown: redcarpet
-pygments: true
+highlighter: true
 languages: ["en", "kr"]
 
-exclude: ["bower_components", "node_modules", "scss", "bower.json", "Gemfile", "Gemfile.lock", "Gruntfile.js", "package.json", "rakefile.rb", "run.sh", "test.sh"]
+exclude_from_localizations: [ "bower_components", 
+                              "stylesheets",
+                              "js",
+                              "img",
+                              "CNAME",
+                              "favicon.ico",
+                              "googlec7315de222f6e6ff.html",
+                              "humans.txt",
+                              "README.txt",
+                              "robots.txt",
+                              "sitemap.xml"]
+                            
+exclude: ["node_modules", 
+          "scss",
+          "bower.json", 
+          "Gemfile", 
+          "Gemfile.lock", 
+          "Gruntfile.js", 
+          "package.json", 
+          "rakefile.rb", 
+          "run.sh", 
+          "test.sh",
+          "README.txt"]
+

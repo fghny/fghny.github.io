@@ -4,7 +4,6 @@ deploy.sh
 test.sh
 
 _site/node_modules/*
-_site/bower_components/*
 _site/bower.json
 _site/Gemfile
 _site/Gemfile.lock
@@ -25,7 +24,6 @@ _site/js/vendor/modernizr.js
 
 
 _site/kr/node_modules/*
-_site/kr/bower_components/*
 _site/kr/bower.json
 _site/kr/Gemfile
 _site/kr/Gemfile.lock
