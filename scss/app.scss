@@ -120,6 +120,7 @@ table {
 /* Main Page */
 .main-title {
   h1 {
+    padding: 1rem 0 0 0;
     font-style: bold;
     text-align: center;
     color: $lt-blue;
@@ -164,6 +165,7 @@ table {
   &.en {
     font-family: $en-fonts;
     & h2 {
+      padding: 1rem 0 0 0;
       color: $dk-blue;
       text-align: center;
       font-family: $en-fonts;
@@ -231,6 +233,7 @@ table {
   &.kr {
     font-family: $kr-fonts;
     & h2 {
+      padding: 1rem 0 0 0;
       color: $dk-blue;
       text-align: center;
       font-family: $kr-fonts;
