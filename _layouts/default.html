@@ -24,106 +24,185 @@
     
   <body>
     <!-- Top Bar -->
-    <div class="contain-to-grid fixed">
-      <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-          {% if site.lang == 'en' %}
-          <li class="name">
-            <a href="/" class="en"><h1>{% t titles.home %}</h1></a>
-          </li>
-          {% else if site.lang == 'kr' %}
-          <li class="name">
-            <a href="/kr" class="kr"><h1>{% t titles.home %}</h1></a>
-          </li>
-          {% endif %}
+    <section class="navigation-section show-for-large-up">
+      <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar>
+          <ul class="title-area">
+            {% if site.lang == 'en' %}
+            <li class="name">
+              <a href="/" class="en"><h1>{% t titles.home %}</h1></a>
+            </li>
+            {% else if site.lang == 'kr' %}
+            <li class="name">
+              <a href="/kr" class="kr"><h1>{% t titles.home %}</h1></a>
+            </li>
+            {% endif %}
+            
+            <li class="toggle-topbar menu-icon"><a href="#"><span> </span></a></li>
+          </ul>
           
-          <li class="toggle-topbar menu-icon"><a href="#"><span> </span></a></li>
-        </ul>
+          <!-- Left Elements -->
+          <section class="top-bar-section">
+            <ul class="left">
+              <!-- Menu buttons -->
+              {% if site.lang == 'en' %}
+              <li class="has-form">
+                <a href="/about">{% t menu.about %}</a>
+              </li>
+              <li class="has-form">
+                <a href="/meetings">{% t menu.meetings %}</a>
+              </li>
+              <!-- <li class="has-form"> -->
+              <!--   <a href="/vbs">{% t menu.vbs %}</a> -->
+              <!-- </li> -->
+              <li class="has-form">
+                <a href="/location">{% t menu.location %}</a>
+              </li>
+              <li class="has-form">
+                <a href="/contact">{% t menu.contact %}</a>
+              </li>
+              {% else if site.lang == "kr" %}
+              <li class="has-form">
+                <a href="/kr/about">{% t menu.about %}</a>
+              </li>
+              <li class="has-form">
+                <a href="/kr/meetings">{% t menu.meetings %}</a>
+              </li>
+              <!-- <li class="has-form"> -->
+              <!--   <a href="/kr/vbs">{% t menu.vbs %}</a> -->
+              <!-- </li> -->
+              <li class="has-form">
+                <a href="/kr/location">{% t menu.location %}</a>
+              </li>
+              <li class="has-form">
+                <a href="/kr/contact">{% t menu.contact %}</a>
+              </li>
+              {% endif %}
+            </ul>
+  
+            <!-- Right Elements -->
+            <ul class="right">
+              <!-- Language switch -->
+              <li class="has-form">
+              {% if site.lang == 'en' %}
+                {% capture link1 %}{{ site.baseurl_url }}/kr{{ page.url }}{% endcapture %}
+                <a href="{{ link1 }}" class="tiny button">{% t global.korean %}</a>
+              {% else if site.lang == "kr" %}
+                {% capture link2 %}{{ site.baseurl_url }}{{ page.url }}{% endcapture %}
+                <a href="{{ link2 }}" class="tiny button">{% t global.english %}</a>
+              {% endif %}
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <!-- END Top Bar -->
+    </section><!-- END navigation-section -->
+          
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar hide-for-large-up">
+          <!-- Off-Canvas Title Area -->
+          <section class="left tab-bar-section">
+            {% if site.lang == 'en' %}
+              <a href="/" class="en"><h1>{% t titles.home %}</h1></a>
+            {% else if site.lang == 'kr' %}
+              <a href="/kr" class="kr"><h1>{% t titles.home %}</h1></a>
+            {% endif %}
+          </section>
+          
+          <!-- Off-Canvas Menu -->
+          <section class="right-small">
+            <a class="right-off-canvas-toggle menu-icon"><span></span></a>
+          </section>
+        </nav><!-- tab-bar -->
         
-        <!-- Left Elements -->
-        <section class="top-bar-section">
-          <ul class="left">
+        <aside class="right-off-canvas-menu">
+          <ul class="off-canvas-list">
             <!-- Menu buttons -->
             {% if site.lang == 'en' %}
-            <li class="has-form">
+            <li class="en">
               <a href="/about">{% t menu.about %}</a>
             </li>
-            <li class="has-form">
+            <li class="en">
               <a href="/meetings">{% t menu.meetings %}</a>
             </li>
             <!-- <li class="has-form"> -->
             <!--   <a href="/vbs">{% t menu.vbs %}</a> -->
             <!-- </li> -->
-            <li class="has-form">
+            <li class="en">
               <a href="/location">{% t menu.location %}</a>
             </li>
-            <li class="has-form">
+            <li class="en">
               <a href="/contact">{% t menu.contact %}</a>
             </li>
             {% else if site.lang == "kr" %}
-            <li class="has-form">
+            <li class="kr">
               <a href="/kr/about">{% t menu.about %}</a>
             </li>
-            <li class="has-form">
+            <li class="kr">
               <a href="/kr/meetings">{% t menu.meetings %}</a>
             </li>
             <!-- <li class="has-form"> -->
             <!--   <a href="/kr/vbs">{% t menu.vbs %}</a> -->
             <!-- </li> -->
-            <li class="has-form">
+            <li class="kr">
               <a href="/kr/location">{% t menu.location %}</a>
             </li>
-            <li class="has-form">
+            <li class="kr">
               <a href="/kr/contact">{% t menu.contact %}</a>
             </li>
             {% endif %}
-          </ul>
-
-          <!-- Right Elements -->
-          <ul class="right">
             <!-- Language switch -->
-            <li class="has-form">
+            <li>
             {% if site.lang == 'en' %}
               {% capture link1 %}{{ site.baseurl_url }}/kr{{ page.url }}{% endcapture %}
-              <a href="{{ link1 }}" class="tiny button">{% t global.korean %}</a>
+              <a href="{{ link1 }}" class="language kr">{% t global.korean %}</a>
             {% else if site.lang == "kr" %}
               {% capture link2 %}{{ site.baseurl_url }}{{ page.url }}{% endcapture %}
-              <a href="{{ link2 }}" class="tiny button">{% t global.english %}</a>
+              <a href="{{ link2 }}" class="language en">{% t global.english %}</a>
             {% endif %}
             </li>
           </ul>
-        </section>
-      </nav>
-    </div>
-    <!-- END Top Bar -->
-
-    <!-- Body -->
-    {{ content }}
-
-    <!-- Footer -->
-    <footer>
-      <div class="row">
-        <hr />
-        <div class="large-12 columns">
-          <div class="large-4 columns">
-            </br>
-          </div>
-          <div class="large-4 columns">
-            <div class="copyright {{ site.lang }}">
-              &copy; 2015 {% t titles.home %}
+        </aside>
+      
+        <section class="main-section">
+          
+      
+          <!-- Body -->
+          {{ content }}
+      
+          <!-- Footer -->
+          <footer>
+            <div class="row">
+              <hr />
+              <div class="large-12 columns">
+                <div class="large-4 columns">
+                  </br>
+                </div>
+                <div class="large-4 columns">
+                  <div class="copyright {{ site.lang }}">
+                    &copy; 2015 {% t titles.home %}
+                  </div>
+                </div>
+                <div class="large-4 columns">
+                  </br>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="large-4 columns">
-            </br>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- END Footer -->
-
+          </footer>
+          <!-- END Footer -->
+    
+        </section><!-- end main-section -->
+        
+        <a class="exit-off-canvas"></a>
+      </div><!-- inner-wrap -->
+    </div><!-- off-canvas-wrap -->
+    
     <!-- Javascript -->
     <script src="{{baseurl}}/bower_components/jquery/dist/jquery.js"></script>
     <script src="{{baseurl}}/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.offcanvas.js"></script>
     <script>
       $(document).foundation();
     </script>

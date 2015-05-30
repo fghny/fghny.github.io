@@ -60,7 +60,7 @@ table {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     & tr td.asterisk {
-      font-style: italic;
+      font-weight: italic;
       font-size: 0.8em;
     }
   }
@@ -75,7 +75,7 @@ table {
   .en {
     h1 {
       text-align: center;
-      font-style: bold;
+      font-weight: bold;
       color: $lt-blue;
       font-family: $en-fonts;
     }
@@ -83,7 +83,7 @@ table {
   .kr {
     h1 {
       text-align: center;
-      font-style: bold;
+      font-weight: bold;
       color: $lt-blue;
       font-family: $kr-fonts;
     }
@@ -95,15 +95,45 @@ table {
   text-align: center;
 }
 
+section.top-bar-section {
+  ul.left {
+    a {
+      padding: 1rem 0 0 0;
+    }
+  }
+}
+
 /* Navbar Title Area */
 .title-area {
   h1 {
     text-align: left;
-    padding: 0 0 0 1rem;
-    color: $white;
-    font-style: bold;
+    padding: 0 2rem 0 1rem;
+    
   }
 
+  a.en {
+    h1 {
+      color: $white;
+      font-weight: bold;
+      font-family: $en-fonts;
+    }
+  }
+
+  a.kr {
+    h1 {
+      color: $white;
+      font-weight: bold;
+      font-family: $kr-fonts;
+    }
+  }
+}
+
+/* Off-Canvas */
+section.left.tab-bar-section {
+  text-align: left;
+  padding: 0 0 0 1rem;
+  color: $white;
+  font-weight: normal;
   a.en {
     h1 {
       font-family: $en-fonts;
@@ -112,7 +142,32 @@ table {
 
   a.kr {
     h1 {
-      font-family: $kr-fonts
+      font-family: $kr-fonts;
+    }
+  }
+}
+  
+aside.right-off-canvas-menu {
+  ul.off-canvas-list {
+    li.en {
+      font-weight: normal;
+      font-family: $en-fonts;
+      color: $white;
+    }
+    li.kr {
+      font-weight: normal;
+      font-family: $kr-fonts;
+      color: $white;
+    }
+    a.language.en {
+      color: $lt-blue;
+      font-weight: bold;
+      font-family: $en-fonts;
+    }
+    a.language.kr {
+      color: $lt-blue;
+      font-weight: bold;
+      font-family: $kr-fonts;
     }
   }
 }
@@ -121,7 +176,7 @@ table {
 .main-title {
   h1 {
     padding: 1rem 0 0 0;
-    font-style: bold;
+    font-weight: bold;
     text-align: center;
     color: $lt-blue;
   }
@@ -135,7 +190,7 @@ table {
 
 .sub-title {
   h5 {
-    font-style: bold;
+    font-weight: bold;
     text-align: center;
     font-size: 0.8rem;
     padding: 0 1em 0 1em;
@@ -208,7 +263,7 @@ table {
           text-align: left;
         }
         & .reference {
-          font-style: italic;
+          font-weight: italic;
           text-align: right;
         }
       }
@@ -224,7 +279,7 @@ table {
           text-align: left;
         }
         & .reference {
-          font-style: italic;
+          font-weight: italic;
           text-align: right;
         }
       }
@@ -275,7 +330,7 @@ table {
           text-align: left;
         }
         & .reference {
-          font-style: italic;
+          font-weight: italic;
           text-align: right;
         }
       }
@@ -291,7 +346,7 @@ table {
           text-align: left;
         }
         & .reference {
-          font-style: italic;
+          font-weight: italic;
           text-align: right;
         }
       }
