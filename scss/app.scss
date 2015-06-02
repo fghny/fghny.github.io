@@ -135,7 +135,6 @@ section.top-bar-section {
   a.kr {
     h1 {
       color: $white;
-      font-weight: bold;
       font-family: $kr-title-fonts;
     }
   }
@@ -189,11 +188,11 @@ aside.right-off-canvas-menu {
 .main-title {
   h1 {
     padding: 1rem 0 0 0;
-    font-weight: bold;
     text-align: center;
     color: $lt-blue;
   }
   .en {
+    font-weight: bold;
     font-family: $en-title-fonts;
   }
   .kr {
