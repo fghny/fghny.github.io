@@ -12,13 +12,16 @@
     <!-- Fonts -->
     <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css"> -->
     <link href='http://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
+
     
     <!-- Modernizr -->
     <script src="/bower_components/modernizr/modernizr.min.js"></script>
+    
+    <!-- App CSS -->
     <link rel="stylesheet" href="/stylesheets/app.css" />
     
     
-    </head>
+  </head>
     
   <body>
     <!-- Top Bar -->
@@ -46,9 +49,9 @@
               <li class="has-form">
                 <a href="/meetings">Meetings</a>
               </li>
-              <!-- <li class="has-form"> -->
-              <!--   <a href="/vbs">Vacation Bible School</a> -->
-              <!-- </li> -->
+              <li class="has-form">
+                 <a href="/vbs_2015">Vacation Bible School</a>
+              </li>
               <li class="has-form">
                 <a href="/location">Location</a>
               </li>
@@ -73,7 +76,7 @@
       </div>
       <!-- END Top Bar -->
     </section><!-- END navigation-section -->
-          
+    
     <div class="off-canvas-wrap" data-offcanvas>
       <div class="inner-wrap">
         <nav class="tab-bar hide-for-large-up">
@@ -89,7 +92,7 @@
             <a class="right-off-canvas-toggle menu-icon"><span></span></a>
           </section>
         </nav><!-- tab-bar -->
-        
+    
         <aside class="right-off-canvas-menu">
           <ul class="off-canvas-list">
             <!-- Menu buttons -->
@@ -100,9 +103,9 @@
             <li class="en">
               <a href="/meetings">Meetings</a>
             </li>
-            <!-- <li class="has-form"> -->
-            <!--   <a href="/vbs">Vacation Bible School</a> -->
-            <!-- </li> -->
+            <li class="has-form">
+              <a href="/vbs_2015">Vacation Bible School</a>
+            </li>
             <li class="en">
               <a href="/location">Location</a>
             </li>
@@ -251,13 +254,13 @@
         <a class="exit-off-canvas"></a>
       </div><!-- inner-wrap -->
     </div><!-- off-canvas-wrap -->
-    
     <!-- Javascript -->
+
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/foundation/foundation.offcanvas.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+    <script src="js/foundation/foundation.orbit.js"></script>
+    <script src="/js/app.js"></script>
+      
   </body>
 </html>
