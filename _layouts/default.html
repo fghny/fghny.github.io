@@ -16,6 +16,7 @@
     
     <!-- Modernizr -->
     <script src="{{baseurl}}/bower_components/modernizr/modernizr.min.js"></script>
+    <script src="http://tholman.com/elevator.js/elevator.js"></script>
     
     <!-- App CSS -->
     <link rel="stylesheet" href="{{baseurl}}/stylesheets/app.css" />
@@ -175,26 +176,35 @@
           <!-- Body -->
           {{ content }}
       
-          <!-- Footer -->
-          <footer>
-            <div class="row">
-              <hr />
-              <div class="large-12 columns">
-                <div class="large-4 columns">
-                  </br>
-                </div>
-                <div class="large-4 columns">
-                  <div class="copyright {{ site.lang }}">
-                    &copy; 2015 {% t titles.home %}
-                  </div>
-                </div>
-                <div class="large-4 columns">
-                  </br>
+        <div class="row text-center">
+          <div class="large-12 columns"> 
+            <!-- Back to top button -->
+            <div class="elevator tiny button">
+              {% t home.top %}
+            </div>
+          </div>
+        </div>
+          
+        <!-- Footer -->
+        <footer>
+          <div class="row">
+            <hr />
+            <div class="large-12 columns">
+              <div class="large-4 columns">
+                </br>
+              </div>
+              <div class="large-4 columns">
+                <div class="copyright {{ site.lang }}">
+                  &copy; 2015 {% t titles.home %}
                 </div>
               </div>
+              <div class="large-4 columns">
+                </br>
+              </div>
             </div>
-          </footer>
-          <!-- END Footer -->
+          </div>
+        </footer>
+        <!-- END Footer -->
     
         </section><!-- end main-section -->
         
@@ -208,6 +218,13 @@
     <script src="js/foundation/foundation.offcanvas.js"></script>
     <script src="js/foundation/foundation.orbit.js"></script>
     <script src="{{baseurl}}/js/app.js"></script>
-      
+    <script>
+      window.onload = function() {
+        var elevator = new Elevator({
+          element: document.querySelector('.elevator.tiny.button'),
+          duration: 1000 // milliseconds
+        });
+      }
+    </script>  
   </body>
 </html>
