@@ -4,7 +4,7 @@ titles:
   meetings: 집회
   location: 위치
   contact: 연락
-  vbs: 여름 성경 학교
+  vbs: 여름 성경 학교
   vbs_registration: "Register for VBS (KR)"
   vbs_thanks: "Thank you for registering (KR)"
   news: 뉴스
@@ -18,13 +18,14 @@ menu:
   meetings: 집회
   location: 위치
   contact: 연락
-  vbs: 여름 성경 학교
+  vbs: 여름 성경 학교
   news: 뉴스
 home:
   title: 주 예수 그리스도의  이름으로 뉴욕의 플러싱에 모이는 성도들
   welcome: 모임 안내
   schedule: 플러싱 모임의 정기집회
   location: 위치
-  vbs: 여름성경 학교
+  vbs: 여름성경 학교
   news: 뉴스
-
+vbs:
+  register: 등록

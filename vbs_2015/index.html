@@ -1,0 +1,39 @@
+---
+layout: default
+title: titles.vbs
+---
+<div class="row">
+  <div class="large-12 columns">
+    <div class="front-page {{ site.lang }}">
+      {% tf vbs_2015/title.md %}
+      </br>
+      <div class="verse">
+        <div class="quote">
+          {% tf vbs_2015/vbs_verse.md %}
+        </div>
+        </br>
+        <div class="reference">
+          {% tf vbs_2015/vbs_verse_reference.md %}
+        </div>
+      </div>
+      </br>
+      {% tf vbs_2015/vbs_intro.md %}
+      
+      </br>
+      <div class="row text-center">
+      {% if site.lang == 'en' %}
+        <a href="/vbs_registration_2015" class="button success">{% t vbs.register %}</a>
+      {% else if site.lang == "kr" %}
+        <a href="/kr/vbs_registration_2015" class="button success">{% t vbs.register %}</a>
+      {% endif %}
+      </div>
+      <hr/>
+      
+      {% tf vbs_2015/vbs_schedule.md %}
+      <hr/>
+      
+      {% tf vbs_2015/vbs_body.md %}
+      
+    </div>
+  </div>
+</div>

@@ -1,0 +1,329 @@
+---
+layout: default
+title: titles.vbs_registration
+---
+<div class="row">
+  <div class="large-12 columns">
+    <div class="front-page {{ site.lang }}">
+      {% tf vbs_registration_2015/title.md %}
+      </br>
+      <div class="text-center">
+        {% tf vbs_registration_2015/00_required.html %}
+      </div>
+    </div>
+  </div>
+</div>
+
+</br>
+
+<form action="http://formspree.io/flushing.gospel.hall.ny@gmail.com" role="form" method="POST">
+  <!-- ROW -->
+
+    
+  <div class="row">
+    <fieldset>
+      <legend>{% tf vbs_registration_2015/000_childinformation.html %}</legend>
+      <div class="row">
+        <div class="large-4 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label for="name">{% tf vbs_registration_2015/01_name.html %}
+                <input type="text" name="name" class="form-control" required>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="large-4 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label for="date_of_birth">{% tf vbs_registration_2015/02_dob.html %}
+                <input type="text" name="date_of_birth" class="form-control" placeholder="{% tf vbs_registration_2015/02_placeholder.html %}" required>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="large-4 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label for="grade">{% tf vbs_registration_2015/03_grade.html %}
+                <input type="text" name="grade" class="form-control" required>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+         
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label for="pickup">{% tf vbs_registration_2015/04_pickup.html %}
+                <textarea name="pickup" class="form-control" placeholder="{% tf vbs_registration_2015/04_placeholder.html %}" rows=2 required></textarea>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label for="allergy">{% tf vbs_registration_2015/05_allergy.html %}
+                <textarea name="allergy" class="form-control" placeholder="{% tf vbs_registration_2015/05_placeholder.html %}" rows=2 required></textarea>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label for="medical_condition">{% tf vbs_registration_2015/06_medical_condition.html %}
+                <textarea name="medical_condition" class="form-control" placeholder="{% tf vbs_registration_2015/06_placeholder.html %}" rows=2 required></textarea>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="large-4 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label>{% tf vbs_registration_2015/07_media_permission.html %}</label>
+              <input type="radio" name="media_permission" value="Yes"><label for="media_permission">{% tf vbs_registration_2015/yes.html %}
+              <input type="radio" name="media_permission" value="No"><label for="media_permission">{% tf vbs_registration_2015/no.html %}
+            </div>
+          </div>
+        </div>
+
+        <div class="large-4 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label>{% tf vbs_registration_2015/08_hand_sanitizer.html %}</label>
+              <input type="radio" name="hand_sanitizer" value="Yes"><label for="hand_sanitizer">{% tf vbs_registration_2015/yes.html %}
+              <input type="radio" name="hand_sanitizer" value="No"><label for="hand_sanitizer">{% tf vbs_registration_2015/no.html %}
+            </div>
+          </div>
+        </div>
+
+        <div class="large-4 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label for="tshirt_size">{% tf vbs_registration_2015/09_tshirt_size.html %}
+                <input type="text" name="tshirt_size" class="form-control">
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </fieldset>
+  </div>
+
+
+  </br>
+  
+  <!-- ROW -->
+  <div class="row">
+    <fieldset>
+      <legend>{% tf vbs_registration_2015/001_parentguardianinformation.html %}</legend>
+      
+      <div class="row">
+      <div class="large-6 columns">
+        <div class="{{ site.lang }}">
+          <div class="form-group">
+            <label for="guardian_name">{% tf vbs_registration_2015/10_guardian_name.html %}
+              <input type="text" name="guardian_name" class="form-control" required>
+            </label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="large-6 columns">
+        <div class="{{ site.lang }}">
+          <div class="form-group">
+            <label for="_replyto">{% tf vbs_registration_2015/11_email.html %}
+            <input type="email" name="_replyto" class="form-control" placeholder="{% tf vbs_registration_2015/11_placeholder.html %}" required>
+          </label>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+      <div class="large-6 columns">
+        <div class="{{ site.lang }}">
+          <div class="form-group">
+            <label for="primary_phone">{% tf vbs_registration_2015/12_primary_phone.html %}
+              <input type="tel" name="primary_phone" class="form-control" placeholder="{% tf vbs_registration_2015/12_placeholder.html %}" required>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="large-6 columns">
+        <div class="{{ site.lang }}">
+          <div class="form-group">
+            <label for="alternate_phone">{% tf vbs_registration_2015/13_alternate_phone.html %}
+              <input type="tel" name="alternate_phone" class="form-control" placeholder="{% tf vbs_registration_2015/13_placeholder.html %}">
+            </label>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label for="address">{% tf vbs_registration_2015/14_address.html %}
+                <input type="text" name="address" class="form-control" placeholder="{% tf vbs_registration_2015/14_placeholder.html %}" required>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="large-4 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label for="city">{% tf vbs_registration_2015/15_city.html %}
+                <input type="text" name="city" class="form-control" placeholder="{% tf vbs_registration_2015/15_placeholder.html %}" required>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="large-4 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label for="state">{% tf vbs_registration_2015/16_state.html %}
+                <input type="text" name="state" class="form-control" placeholder="{% tf vbs_registration_2015/16_placeholder.html %}" required>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="large-4 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label for="zip">{% tf vbs_registration_2015/17_zip.html %}
+                <input type="text" name="zip" class="form-control" placeholder="{% tf vbs_registration_2015/17_placeholder.html %}" required>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </fieldset>
+  </div>
+
+  </br>
+
+  <!-- ROW -->
+  <div class="row">
+    <fieldset>
+      <legend>{% tf vbs_registration_2015/002_emergencycontactinformation.html %}</legend>
+      
+      <div class="row">
+      <div class="large-6 columns">
+        <div class="{{ site.lang }}">
+          <div class="form-group">
+            <label for="emergency_contact_name">{% tf vbs_registration_2015/18_emergency_name.html %}
+              <input type="text" name="emergency_contact_name" class="form-control" placeholder="{% tf vbs_registration_2015/18_placeholder.html %}" required>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="large-6 columns">
+        <div class="{{ site.lang }}">
+          <div class="form-group">
+            <label for="emergency_contact_relationship">{% tf vbs_registration_2015/19_emergency_relationship.html %}
+              <input type="text" name="emergency_contact_relationship" class="form-control" required>
+            </label>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <div class="row">
+      <div class="large-6 columns">
+        <div class="{{ site.lang }}">
+          <div class="form-group">
+            <label for="emergency_primary_phone">{% tf vbs_registration_2015/20_emergency_primary_phone.html %}
+              <input type="text" name="emergency_primary_phone" class="form-control" placeholder="{% tf vbs_registration_2015/20_placeholder.html %}" required>
+            </label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="large-6 columns">
+        <div class="{{ site.lang }}">
+          <div class="form-group">
+            <label for="emergency_alternate_phone">{% tf vbs_registration_2015/21_emergency_alternate_phone.html %}
+              <input type="text" name="emergency_alternate_phone" class="form-control" placeholder="{% tf vbs_registration_2015/21_placeholder.html %}">
+            </label>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+    </fieldset>
+  </div>
+  
+      
+  <div class="row">
+    <fieldset>
+      <legend>{% tf vbs_registration_2015/003_miscellaneous.html %}</legend>
+      
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label for="hear_about">{% tf vbs_registration_2015/22_hearabout.html %}
+                <textarea name="hear_about" class="form-control" rows=2></textarea>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="{{ site.lang }}">
+            <div class="form-group">
+              <label for="church_name">{% tf vbs_registration_2015/23_churchname.html %}
+                <textarea name="church_name" class="form-control" rows=2></textarea>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </fieldset>
+  </div>
+  
+  <!-- Submit Button -->
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="{{ site.lang }}">
+        <div class="text-center">
+          {% if site.lang == 'en' %}
+            <input type="hidden" name="_next" value="//flushinggospelhall.org/vbs_thanks/">  
+          {% else if site.lang == "kr" %}
+            <input type="hidden" name="_next" value="//flushinggospelhall.org/kr/vbs_thanks/">
+          {% endif %}
+          <input type="submit" class="small secondary button" value="{% tf contact/contact_submit.html %}">
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

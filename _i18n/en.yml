@@ -27,5 +27,7 @@ home:
   location: "Location"
   vbs: "Vacation Bible School"
   news: "News"
+vbs:
+  register: "Register Now!"
 
 

@@ -1,0 +1,1 @@
+"God commendeth His love toward us, in that, while we were yet sinners, Christ died for us."

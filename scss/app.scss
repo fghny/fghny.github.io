@@ -1,20 +1,24 @@
 @import "app_settings";
 //@import "settings";
 @import "foundation";
-
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,300);
 //================ Variables ================
 // Colors
 $white: #FFFFFF;
 $black: #000000;
 $lt-blue: #2D9FC4;
 $dk-blue: #00364A;
-$lt-gray: #6F7072;
+$lt-gray: #333333;
 
 // English Font Family
-$en-fonts: 'Enriqueta', serif;
+$en-title-fonts: "Enriqueta", sans-serif;
+$en-fonts: "Open Sans", sans-serif;
 
 // Korean Font Family
-$kr-fonts: "Batang", serif;
+$kr-title-fonts: "Jeju Gothic", sans-serif;
+$kr-fonts: "Nanum Gothic", sans-serif;
  
 //================== Styles =================
 /* HTML */
@@ -77,7 +81,7 @@ table {
       text-align: center;
       font-weight: bold;
       color: $lt-blue;
-      font-family: $en-fonts;
+      font-family: $en-title-fonts;
     }
   }  
   .kr {
@@ -85,7 +89,7 @@ table {
       text-align: center;
       font-weight: bold;
       color: $lt-blue;
-      font-family: $kr-fonts;
+      font-family: $kr-title-fonts;
     }
   }
 }
@@ -115,7 +119,7 @@ section.top-bar-section {
     h1 {
       color: $white;
       font-weight: bold;
-      font-family: $en-fonts;
+      font-family: $en-title-fonts;
     }
   }
 
@@ -123,7 +127,7 @@ section.top-bar-section {
     h1 {
       color: $white;
       font-weight: bold;
-      font-family: $kr-fonts;
+      font-family: $kr-title-fonts;
     }
   }
 }
@@ -136,13 +140,13 @@ section.left.tab-bar-section {
   font-weight: normal;
   a.en {
     h1 {
-      font-family: $en-fonts;
+      font-family: $en-title-fonts;
     }
   }
 
   a.kr {
     h1 {
-      font-family: $kr-fonts;
+      font-family: $kr-title-fonts;
     }
   }
 }
@@ -181,10 +185,10 @@ aside.right-off-canvas-menu {
     color: $lt-blue;
   }
   .en {
-    font-family: $en-fonts;
+    font-family: $en-title-fonts;
   }
   .kr {
-    font-family: $kr-fonts;
+    font-family: $kr-title-fonts;
   }
 }
 
@@ -197,10 +201,10 @@ aside.right-off-canvas-menu {
     color: $lt-gray;
   }
   .en {
-    font-family: $en-fonts;
+    font-family: $en-title-fonts;
   }
   .kr {
-    font-family: $kr-fonts;
+    font-family: $kr-title-fonts;
   }
 }
 
@@ -212,36 +216,37 @@ aside.right-off-canvas-menu {
 }
 
 .front-page {
-  & a {
-    //display: block;
-    //font-size: 0.8rem;
-    //text-align: center;
-  }
+  & a.button.success {
+      font-family: $en-fonts;
+      font-style: bold;
+    }
   &.en {
     font-family: $en-fonts;
     & h2 {
       padding: 1rem 0 0 0;
       color: $dk-blue;
       text-align: center;
-      font-family: $en-fonts;
+      font-family: $en-title-fonts;
     }
     & h3 {
+      padding: 1rem 0 0 0;
       color: $dk-blue;
       //text-align: center;
-      font-family: $en-fonts;
+      font-family: $en-title-fonts;
     }
     & h4 {
+      padding: 1rem 0 0 0;
       color: $black;
       //text-align: center;
-      font-family: $en-fonts;
+      font-family: $en-title-fonts;
     }
     & p {
       color: $lt-gray;
-      //font-family: $en-fonts;
+      font-family: $en-fonts;
     }
     & ul {
       color: $lt-gray;
-      //font-family: $en-fonts;
+      font-family: $en-fonts;
     }
     & .instructions {
       text-align: center;
@@ -258,13 +263,15 @@ aside.right-off-canvas-menu {
         //display: block;
         //margin: 0 auto;
         padding: 1rem 1rem 1rem 1rem;
-
-        & .quote {
+        
+        & .quote p {
           text-align: left;
+          color: $dk-blue;
         }
-        & .reference {
-          font-weight: italic;
+        & .reference p {
+          font-style: italic;
           text-align: right;
+          color: $dk-blue;
         }
       }
     }
@@ -273,42 +280,52 @@ aside.right-off-canvas-menu {
       & .verse {
         //display: block;
         //margin: 0 auto;
-        padding: 1rem 10rem 0rem 10rem;
-
-        & .quote {
+        padding: 1rem 14rem 0rem 14rem;
+        
+        & .quote p {
           text-align: left;
+          color: $dk-blue;
         }
-        & .reference {
-          font-weight: italic;
+        & .reference p {
+          font-style: italic;
           text-align: right;
+          color: $dk-blue;
         }
       }
     }
   }
   &.kr {
     font-family: $kr-fonts;
+    
+    & a.button.success {
+      font-family: $kr-title-fonts;
+      font-style: bold;
+    }
     & h2 {
       padding: 1rem 0 0 0;
       color: $dk-blue;
       text-align: center;
-      font-family: $kr-fonts;
+      font-family: $kr-title-fonts;
     }
     & h3 {
+      padding: 1rem 0 0 0;
       color: $dk-blue;
       //text-align: center;
-      font-family: $kr-fonts;
+      font-family: $kr-title-fonts;
     }
     & h4 {
+      padding: 1rem 0 0 0;
       color: $black;
       //text-align: center;
-      font-family: $kr-fonts;
+      font-family: $kr-title-fonts;
     }
     & p {
       color: $lt-gray;
-      //font-family: $kr-fonts;
+      font-family: $kr-fonts;
     }
     & ul {
       color: $lt-gray;
+      font-family: $kr-fonts;
     }
     & .instructions {
       text-align: center;
@@ -326,12 +343,14 @@ aside.right-off-canvas-menu {
         //margin: 0 auto;
         padding: 1rem 1rem 1rem 1rem;
 
-        & .quote {
+        & .quote p {
           text-align: left;
+          color: $dk-blue;
         }
-        & .reference {
-          font-weight: italic;
+        & .reference p {
+          font-style: italic;
           text-align: right;
+          color: $dk-blue;
         }
       }
     }
@@ -340,14 +359,16 @@ aside.right-off-canvas-menu {
       & .verse {
         //display: block;
         //margin: 0 auto;
-        padding: 1rem 10rem 0rem 10rem;
+        padding: 1rem 14rem 0rem 14rem;
 
-        & .quote {
+        & .quote p {
           text-align: left;
+          color: $dk-blue;
         }
-        & .reference {
-          font-weight: italic;
+        & .reference p {
+          font-style: italic;
           text-align: right;
+          color: $dk-blue;
         }
       }
     }

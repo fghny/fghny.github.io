@@ -12,15 +12,18 @@
     <!-- Fonts -->
     <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css"> -->
     <link href='http://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
+
     
     <!-- Modernizr -->
     <script src="{{baseurl}}/bower_components/modernizr/modernizr.min.js"></script>
+    
+    <!-- App CSS -->
     <link rel="stylesheet" href="{{baseurl}}/stylesheets/app.css" />
     
     {% if page.url == "/404.html" %}
       <meta http-equiv="refresh" content="5; url=/">
     {% endif %}
-    </head>
+  </head>
     
   <body>
     <!-- Top Bar -->
@@ -52,9 +55,9 @@
               <li class="has-form">
                 <a href="/meetings">{% t menu.meetings %}</a>
               </li>
-              <!-- <li class="has-form"> -->
-              <!--   <a href="/vbs">{% t menu.vbs %}</a> -->
-              <!-- </li> -->
+              <li class="has-form">
+                 <a href="/vbs_2015">{% t menu.vbs %}</a>
+              </li>
               <li class="has-form">
                 <a href="/location">{% t menu.location %}</a>
               </li>
@@ -68,9 +71,9 @@
               <li class="has-form">
                 <a href="/kr/meetings">{% t menu.meetings %}</a>
               </li>
-              <!-- <li class="has-form"> -->
-              <!--   <a href="/kr/vbs">{% t menu.vbs %}</a> -->
-              <!-- </li> -->
+              <li class="has-form">
+                <a href="/kr/vbs_2015">{% t menu.vbs %}</a>
+              </li>
               <li class="has-form">
                 <a href="/kr/location">{% t menu.location %}</a>
               </li>
@@ -98,7 +101,7 @@
       </div>
       <!-- END Top Bar -->
     </section><!-- END navigation-section -->
-          
+    
     <div class="off-canvas-wrap" data-offcanvas>
       <div class="inner-wrap">
         <nav class="tab-bar hide-for-large-up">
@@ -116,7 +119,7 @@
             <a class="right-off-canvas-toggle menu-icon"><span></span></a>
           </section>
         </nav><!-- tab-bar -->
-        
+    
         <aside class="right-off-canvas-menu">
           <ul class="off-canvas-list">
             <!-- Menu buttons -->
@@ -127,9 +130,9 @@
             <li class="en">
               <a href="/meetings">{% t menu.meetings %}</a>
             </li>
-            <!-- <li class="has-form"> -->
-            <!--   <a href="/vbs">{% t menu.vbs %}</a> -->
-            <!-- </li> -->
+            <li class="has-form">
+              <a href="/vbs_2015">{% t menu.vbs %}</a>
+            </li>
             <li class="en">
               <a href="/location">{% t menu.location %}</a>
             </li>
@@ -143,9 +146,9 @@
             <li class="kr">
               <a href="/kr/meetings">{% t menu.meetings %}</a>
             </li>
-            <!-- <li class="has-form"> -->
-            <!--   <a href="/kr/vbs">{% t menu.vbs %}</a> -->
-            <!-- </li> -->
+            <li class="has-form">
+              <a href="/kr/vbs_2015">{% t menu.vbs %}</a>
+            </li>
             <li class="kr">
               <a href="/kr/location">{% t menu.location %}</a>
             </li>
@@ -198,13 +201,13 @@
         <a class="exit-off-canvas"></a>
       </div><!-- inner-wrap -->
     </div><!-- off-canvas-wrap -->
-    
     <!-- Javascript -->
+
     <script src="{{baseurl}}/bower_components/jquery/dist/jquery.js"></script>
     <script src="{{baseurl}}/bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/foundation/foundation.offcanvas.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+    <script src="js/foundation/foundation.orbit.js"></script>
+    <script src="{{baseurl}}/js/app.js"></script>
+      
   </body>
 </html>
