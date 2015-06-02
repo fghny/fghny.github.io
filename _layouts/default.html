@@ -89,10 +89,10 @@
               <li class="has-form">
               {% if site.lang == 'en' %}
                 {% capture link1 %}{{ site.baseurl_url }}/kr{{ page.url }}{% endcapture %}
-                <a href="{{ link1 }}" class="tiny button">{% t global.korean %}</a>
+                <a href="{{ link1 }}" class="en tiny button">{% t global.korean %}</a>
               {% else if site.lang == "kr" %}
                 {% capture link2 %}{{ site.baseurl_url }}{{ page.url }}{% endcapture %}
-                <a href="{{ link2 }}" class="tiny button">{% t global.english %}</a>
+                <a href="{{ link2 }}" class="kr tiny button">{% t global.english %}</a>
               {% endif %}
               </li>
             </ul>

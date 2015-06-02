@@ -50,9 +50,9 @@ title: titles.home
         
         <br>
         <br>
-        <p>
-          We are happy to announce Vacation Bible School (VBS), which will take place from August 26 - 29. Last year we had a <a href="{{baseurl}}/vbs_2014">great time</a>. You can learn more about this year's VBS <a href="{{baseurl}}/vbs_2015">here</a>.
-        </p>
+        
+        {% tf vbs_2015.md %}
+
         <!-- Register -->
         <div class="row text-center">
           <br>
@@ -61,6 +61,7 @@ title: titles.home
       {% else if site.lang == "kr" %}
         <img src="{{baseurl}}/img/vbs_kor_2015.png"/>
         
+        {% tf vbs_2015.md %}
         <!-- Register -->
         <div class="row text-center">
           <br>
