@@ -65,9 +65,9 @@ title: titles.contact
       <div class="front-page {{ site.lang }}">
         <div class="text-center">
           {% if site.lang == 'en' %}
-            <input type="hidden" name="_next" value="//flushinggospelhall.org/thanks/">  
+            <input type="hidden" name="_next" value="{{baseurl}}/contact_thanks/">  
           {% else if site.lang == "kr" %}
-            <input type="hidden" name="_next" value="//flushinggospelhall.org/kr/thanks/">
+            <input type="hidden" name="_next" value="{{baseurl}}/kr/contact_thanks/">
           {% endif %}
           <input type="submit" class="small secondary button" value="{% tf contact/contact_submit.html %}">
         </div>

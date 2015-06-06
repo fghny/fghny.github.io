@@ -1,3 +1,4 @@
-## Thank you for registering for VBS 2014 (KR)
-
-## We look forward to meeting you and your child!
+<ul class="vcard">
+  <li><h2>2015년 여름성경학교에 등록해 주셔서 감사드립니다</h2></li>
+  <li><h2>여러분과 여러분의 자녀들을 이곳에서 만나뵐 것을 가대하고 있습니다</h2></li>
+</ul>

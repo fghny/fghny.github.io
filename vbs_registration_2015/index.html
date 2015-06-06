@@ -317,9 +317,9 @@ title: titles.vbs_registration
       <div class="{{ site.lang }}">
         <div class="text-center">
           {% if site.lang == 'en' %}
-            <input type="hidden" name="_next" value="//flushinggospelhall.org/vbs_thanks/">  
+            <input type="hidden" name="_next" value="{{baseurl}}/vbs_thanks_2015">  
           {% else if site.lang == "kr" %}
-            <input type="hidden" name="_next" value="//flushinggospelhall.org/kr/vbs_thanks/">
+            <input type="hidden" name="_next" value="{{baseurl}}/kr/vbs_thanks_2015">
           {% endif %}
           <input type="submit" class="small secondary button" value="{% tf contact/contact_submit.html %}">
         </div>
